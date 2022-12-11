@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'oliver_dein.urls'
 
-CSRF_TRUSTED_ORIGINS = ['https://*.mydomain.com', 'https://8000-shahid129-oliverdein-u73z2t1mzzl.ws-eu77.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://*.mydomain.com', 'https://*.8000-shahid129-oliverdein-u73z2t1mzzl.ws-eu78.gitpod.io/']
 
 TEMPLATES = [
     {

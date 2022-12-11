@@ -49,15 +49,16 @@
                 aria-expanded="false">
                 Account
             </a>
-            {% if user.is_authenticated %}
-            {% if user.is_superuser %}
-        <li><a class="dropdown-item" href="#">Stock Management</a></li>
-        {% endif%}
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">My Profile</a></li>
-            <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
-        </ul>
-        {% else %}
+            
+                <ul class="dropdown-menu">
+                    {% if user.is_authenticated %}
+                {% if user.is_superuser %}
+                    <li><a class="dropdown-item" href="#">Stock Management</a></li>
+                {% endif%}
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
+                </ul>
+            {% else %}
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
             <li><a class="dropdown-item" href="{% url 'account_login' %}">Sign In</a></li>
