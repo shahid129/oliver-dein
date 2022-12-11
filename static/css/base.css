@@ -1,0 +1,32 @@
+body {
+    padding-top: 130px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+    color: red;
+}
+
+/* --------------- Navigation -------------- */
+
+.container-fluid {
+    padding: 0 5%;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+li.nav-item {
+    padding: 0 10px;
+}
+
+.brand-logo {
+    width: 160px;
+}
+/* 
+.dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
