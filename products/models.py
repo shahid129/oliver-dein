@@ -33,6 +33,5 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.FileField(null=True, blank=True)
 
-
     def __str__(self):
         return self.name

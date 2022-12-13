@@ -12,6 +12,7 @@ h1 {
 
 .container-fluid {
     padding: 0 5%;
+    margin: -20px 0px;
 }
 
 .navbar-nav {
@@ -25,11 +26,43 @@ li.nav-item {
 .brand-logo {
     width: 160px;
 }
-/* 
-.dropdown:hover .dropdown-menu {
-    display: block;
-} */
+
 
 .bal {
     padding-top: 400px;
+}
+
+.nav-item a,
+.nav-item li a,
+.shopping-cart {
+    color: #ADB3BC;
+    text-transform: uppercase;
+}
+
+
+.nav-item a:hover,
+.shopping-cart:hover{
+    color: white;
+    transition: ease-in-out all .3s; 
+}
+
+.nav-item li a:hover {
+    color: black;
+}
+
+#delivery-banner {
+    background-color: #FF9A14;
+}
+
+
+/* button */
+
+.btn {
+    background-color: white;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #ADB3BC;
+    color: white;
 }
