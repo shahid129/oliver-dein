@@ -11,7 +11,7 @@
                 <div class="card h-100">
                     <!-- Product image-->
                     {% if product.image %}
-                    <a href="">
+                    <a href="{% url 'product_detail' product.slug %}">
                         <img class="card-img-top" src="{{ product.image.url }}" alt="{{product.name}}" />
                     </a>
                     {% else %}
@@ -27,7 +27,11 @@
                             <h5 class="fw-bolder">{{ product.name }}</h5>
                             <!-- Product price-->
                             <p>€{{ product.price }}</p>
-                            <p> <i class="fas fa-star"></i>{{ product.rating }}/5</p>
+                            {% if product.rating %}
+                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                            {% else %}
+                                <small class="text-muted">No Rating</small>
+                            {% endif %}
                         </div>
                     </div>
                     <!-- Product actions-->
