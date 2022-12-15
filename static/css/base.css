@@ -66,3 +66,24 @@ li.nav-item {
     background-color: #ADB3BC;
     color: white;
 }
+
+.category-badge {
+    border-radius: 33px;
+    background-color: white;
+    color: #F99F38;
+    border: 1px solid #F99F38;
+    padding: 5px 12px;
+    margin-top: 0.5rem!important;
+
+}
+.category-badge:hover,
+.badge:hover {
+    background-color: #F99F38;
+    color: white;
+    transition: ease-in-out all .3s; 
+}
+
+.text-black {
+    color: black;
+    text-decoration: none;
+}
