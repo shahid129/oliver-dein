@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center"> Shopping Bag</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+                <div>
+                    items
+                </div>
+            {% else %}
+                <div class="text-center">
+                    <p class="my-5">Bag is empty</p>
+                    <p>
+                        <a class="text-decoration-none category-badge" href="{% url 'products' %}">
+                            Back to Products <i class="fas fa-arrow-alt-circle-left"></i>
+                        </a> 
+                    </p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
