@@ -34,24 +34,26 @@ li.nav-item {
 
 .nav-item a,
 .nav-item li a,
-.shopping-cart {
-    color: #ADB3BC;
+.shopping-cart,
+.dropdown-item {
+    color: black;
     text-transform: uppercase;
 }
 
 
 .nav-item a:hover,
 .shopping-cart:hover{
-    color: white;
+    color: #F99F38;
     transition: ease-in-out all .3s; 
 }
 
 .nav-item li a:hover {
-    color: black;
+    color: #F99F38;
+    background-color: white;
 }
 
 #delivery-banner {
-    background-color: #FF9A14;
+    background-color: #F99F38;
 }
 
 
@@ -59,12 +61,16 @@ li.nav-item {
 
 .btn {
     background-color: white;
-    color: black;
+    color: #F99F38;
+    border-color: #F99F38;
+    border-radius: 33px;
 }
 
 .btn:hover {
-    background-color: #ADB3BC;
+    background-color: #F99F38;
     color: white;
+    border-color: #F99F38;
+
 }
 
 .category-badge {
