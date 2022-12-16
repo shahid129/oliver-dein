@@ -14,18 +14,18 @@
     </div>
 
     <div class="row my-3">
-        <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="col-12 col-md-6 d-flex justify-content-left">
             <p class="mt-3">
                 {% if search_term or current_categories or current_sorting != 'None_None' %}
-                <span class=""><a class="text-decoration-none category-badge" href="{% url 'products' %}">Back to Products</a> </span> |
+                <span class=""><a class="text-decoration-none category-badge" href="{% url 'products' %}">Back to Products <i class="fas fa-arrow-alt-circle-left"></i></a> </span> |
                 {% endif %}
                 {{ products | length }} Products {% if search_term %} found {% endif %}
 
             </p>
         </div>
-        <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+        <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-left justify-content-md-end">
             <select id="sort-selector" class="category-badge">
-                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort</option>
                 <option value="price_asc" {% if current_sorting == 'None_None' %}selected{% endif %}>Price (Low to High)</option>
                 <option value="price_desc" {% if current_sorting == 'None_None' %}selected{% endif %}>Price (High to Low</option>
                 <option value="rating_asc" {% if current_sorting == 'None_None' %}selected{% endif %}>Rating( Low to High)</option>
@@ -87,5 +87,33 @@
         </div>
     </div>
 </section>
+
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
 
 {% endblock %}
