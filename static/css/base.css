@@ -93,3 +93,7 @@ li.nav-item {
     color: black;
     text-decoration: none;
 }
+
+.text-right {
+    text-align: right;
+}
