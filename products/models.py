@@ -23,6 +23,8 @@ class Product(models.Model):
     slug = models.SlugField(max_length=100, null=False, unique=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    discount_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     has_color = models.BooleanField(default=False, null=True, blank=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, blank=True)
