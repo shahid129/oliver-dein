@@ -7,6 +7,7 @@ from .models import Product, Category
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['name','category', 'price', 'rating']
     prepopulated_fields = {'slug': ('name',)}
+    list_editable = ['price', 'category']
 
 
 admin.site.register(Category)

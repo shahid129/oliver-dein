@@ -22,4 +22,5 @@ def add_to_bag(request, slug):
     else:
         bag[slug] = quantity
 
+    request.session['bag'] = bag
     return redirect(redirect_url)
