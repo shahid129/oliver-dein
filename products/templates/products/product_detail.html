@@ -45,17 +45,33 @@
                         <small class="text-muted">No Rating</small>
                     {% endif %}
                 </p>
+                
                 <p class="mt-3">{{ product.description }}</p>
             </div>
             <form action="{% url 'add_to_bag' product.slug %}" method="POST">
                 {%csrf_token%}
-                <div class="container">
+                <div class="form-row">
+                    {% with product.has_sizes as s %}
+                    {% if s %}
+                        <div class="col-12">
+                            <p><strong>Available Sizes</strong></p>
+                            <select class="form-control w-50" name="product-size" id="id_product_size">
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m" selected>M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                    {% endif %}
+
+                {% endwith %}
                     
                     <div class="col-12">
                         <p class="mt-3">
                             <strong>Quantity</strong>
                         </p>
-                        <input class="form-control" type="number" name="quantity" value="1" min="1" max="100" data-item_id="{{ product.slug }}" id="id_qty_{{ product.slug}}">
+                        <input class="form-control w-50" type="number" name="quantity" value="1" min="1" max="100" data-item_id="{{ product.slug }}" id="id_qty_{{ product.slug}}">
                     </div>
                     <div class="col-12 text-center">
                         <input  type="submit" class="btn btn-outline-dark mt-3 " value="Add to Cart">
