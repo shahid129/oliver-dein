@@ -18,7 +18,10 @@ def bag_contents(request):
 
     for slug, quantity in bag.items():
         product = get_object_or_404(Product, slug=slug)
-        total += quantity * product.price
+        if product.discount_price:
+            total += quantity * product.discount_price
+        else:
+            total += quantity * product.price
         product_count += quantity
         bag_items.append({
             'slug': slug,
