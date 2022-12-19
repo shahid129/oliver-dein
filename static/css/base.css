@@ -97,3 +97,17 @@ li.nav-item {
 .text-right {
     text-align: right;
 }
+
+.update-link {
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.remove-item {
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
