@@ -32,7 +32,10 @@ def bag_contents(request):
         else:
             product = get_object_or_404(Product, slug=slug)
             for size, quantity in item_data['items_by_size'].items():
-                total += quantity * product.price
+                if product.discount_price:
+                    total += quantity * product.discount_price
+                else:
+                    total += quantity * product.price
                 product_count += quantity
                 bag_items.append({
                     'slug': slug,
