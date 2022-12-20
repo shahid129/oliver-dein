@@ -15,7 +15,7 @@
         <div class="col">
             {% if bag_items %}
                 <div class="table-responsive-sm table-now">
-                    <table class="table table-sm table-borderless">
+                    <table class="table table-sm table-borderless w-auto">
                         <thead class="text-center">
                             <tr>
                                 <th scope="col">Product</th>
@@ -41,7 +41,7 @@
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <div class="input-group-prepend">
+                                                <div class="input-group-prepend me-1">
                                                     <button class="decrement-qty btn-sm btn btn-outline-dark"
                                                         data-item_id="{{ item.slug }}" id="decrement-qty_{{ item.slug }}">
                                                         <span>
@@ -52,7 +52,7 @@
                                                 <input class="form-control form-control-sm qty_input w-50" type="number" 
                                                     name="quantity" value="{{ item.quantity }}" min="1" max="100" 
                                                     data-item_id="{{ item.slug }}" id="id_qty_{{ item.slug }}">
-                                                <div class="input-group-append">
+                                                <div class="input-group-append ms-1">
                                                     <button class="btn btn-outline-dark btn-sm increment-qty"
                                                         data-item_id="{{ item.slug }}" id="increment-qty_{{ item.slug }}">
                                                         <span>

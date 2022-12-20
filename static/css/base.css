@@ -73,6 +73,11 @@ li.nav-item {
 
 }
 
+.bg-primary {
+    background-color: #F99F38 !important;
+    margin-left: 20px;
+}
+
 .category-badge {
     border-radius: 33px;
     background-color: white;
@@ -82,8 +87,7 @@ li.nav-item {
     margin-top: 0.5rem!important;
 
 }
-.category-badge:hover,
-.badge:hover {
+.category-badge:hover{
     background-color: #F99F38;
     color: white;
     transition: ease-in-out all .3s; 
@@ -112,6 +116,24 @@ li.nav-item {
     
 }
 
+.message-container {
+    position: fixed;
+    top: 82px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 5px;
+}
+
+
+/* ------------------------ Media Queries */
+
 @media (min-width: 768px) {
 
     .table-now {
@@ -122,4 +144,8 @@ li.nav-item {
     .free-delivery-alert {
         text-align: right;
     }
+}
+
+.quantity-form {
+    width: 60%;
 }
