@@ -17,9 +17,6 @@ def add_to_bag(request, slug):
     """ Add product quantity to shopping bag """
 
     product = get_object_or_404(Product, slug=slug)
-    print(product.name)
-    print(slug)
-
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
