@@ -63,3 +63,26 @@ def adjust_bag(request, slug):
 
     request.session['bag'] = bag
     return redirect(reverse('bag'))
+
+
+def remove_from_bag(request, slug):
+    """Remove the item from  bag"""
+
+    try:
+        size = None
+        if 'product_size' in request.POST:
+            size = request.POST['product_size']
+        bag = request.session.get('bag', {})
+
+        if size:
+            del bag[slug]['items_by_size'][size]
+            if not bag[slug]['items_by_size']:
+                bag.pop(slug)
+        else:
+            bag.pop(slug)
+
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)

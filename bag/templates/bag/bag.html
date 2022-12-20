@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-                <div class="table-responsive-sm">
+                <div class="table-responsive-sm table-now">
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
@@ -26,7 +26,7 @@
                         </thead>
 
                         {% for item in bag_items %}
-                            <tr>
+                            <tr >
                                 <td class="p-3 w-25">
                                     <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                 </td>
@@ -66,7 +66,7 @@
                                         </div>
                                     </form>
                                     <a class="update-link text-info"><small>Update</small></a>
-                                    <a class="remove-item text-danger" id="remove{{ item.slug }}" data-size="{{ item.size }}"><small>Delete</small></a>
+                                    <a class="remove-item text-danger" id="remove_{{ item.slug }}" data-product-size="{{ item.size }}"><small>Delete</small></a>
 
                                 </td>
                                 <td class="py-3 w-25">
@@ -143,6 +143,18 @@
         form.submit();
     })
 
+ // Remove item from bag
+ $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
 </script>
 {% endblock %}

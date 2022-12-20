@@ -111,3 +111,15 @@ li.nav-item {
     cursor: pointer;
     
 }
+
+@media (min-width: 768px) {
+
+    .table-now {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .free-delivery-alert {
+        text-align: right;
+    }
+}
