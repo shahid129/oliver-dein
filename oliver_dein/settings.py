@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'oliver_dein.urls'
 
-CSRF_TRUSTED_ORIGINS = ['https://*.mydomain.com', 'https://*.8000-shahid129-oliverdein-u73z2t1mzzl.ws-eu79.gitpod.io/']
+CSRF_TRUSTED_ORIGINS = ['https://*.mydomain.com', 'https://*.8000-shahid129-oliverdein-u73z2t1mzzl.ws-eu80.gitpod.io/']
 
 TEMPLATES = [
     {
