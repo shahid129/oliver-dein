@@ -30,6 +30,8 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.FileField(null=True, blank=True)
+    featured = models.BooleanField(default=False, null=True, blank=True)
+
 
     def __str__(self):
         return self.name
