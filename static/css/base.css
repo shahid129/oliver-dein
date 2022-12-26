@@ -27,6 +27,11 @@ li.nav-item {
     width: 160px;
 }
 
+.footer-menu a{
+    font-size: small;
+}
+
+.footer-menu a,
 .nav-item a,
 .nav-item li a,
 .shopping-cart,
@@ -35,6 +40,7 @@ li.nav-item {
     text-transform: uppercase;
 }
 
+.footer-menu a:hover,
 .mobile-menu:hover,
 .nav-item a:hover,
 .shopping-cart:hover{

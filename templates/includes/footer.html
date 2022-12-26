@@ -1,0 +1,52 @@
+<!-- Footer -->
+<footer class="bg-light text-center">
+    <div class="container p-4">
+        <!-- Social media -->
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="_blank"
+                role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" target="_blank"
+                role="button"><i class="fab fa-google"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"
+                role="button"><i class="fab fa-instagram"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkdedin.com/" target="_blank"
+                role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        </section>
+
+        <!-- Subscribe form -->
+        <section class="">
+            <form action="">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-5 col-12">
+                        <!-- Email input -->
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="" class="form-control"
+                                placeholder="Sign up for our newsletter" />
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-light mb-4">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Section: Links -->
+        <section class="footer-menu">
+            <div class="justify-content-center">
+                <a class=" text-decoration-none p-3 mb-2 " href="">About</a>
+                <a class=" text-decoration-none p-3 mb-2" href="">Contact</a>
+                <a class=" text-decoration-none p-3 mb-2" href="">Privacy</a>
+                <a class=" text-decoration-none p-3m b-2" href="{% url 'account_signup' %}">Register</a>
+            </div>
+        </section>
+    </div>
+</footer>
