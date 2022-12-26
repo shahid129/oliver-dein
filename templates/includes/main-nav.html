@@ -49,7 +49,7 @@
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Cabinets,Appliances,Taps and Sinks,">All Kitchen Products</a></li>
             </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown d-none d-lg-flex">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Account
@@ -67,7 +67,7 @@
                 {% endif %}
             </ul>
         </li>
-        <li class="nav-item list-inline-item">
+        <li class="nav-item list-inline-item d-none d-lg-flex">
             <a class="{% if grand_total %}text-info font-weighht-bold {% else %}text-black {% endif %} nav-link"
                 href="{% url 'bag' %}">
                 <div class="shopping-cart">
@@ -76,14 +76,14 @@
                         {% if grand_total %}
                         €{{ grand_total | floatformat:2 }}
                         {% else %}
-                        $ 0.00
+                        €0.00
                         {% endif %}
                     </span>
                 </div>
             </a>
         </li>
     </ul>
-    <form class="d-flex" role="search" method="GET" action="{% url 'products' %}">
+    <form class="d-flex d-none d-lg-flex" role="search" method="GET" action="{% url 'products' %}">
         <input class="form-control me-2 search-bar" type="search" name="q" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
     </form>
