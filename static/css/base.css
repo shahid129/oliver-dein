@@ -51,6 +51,14 @@ li.nav-item {
     background-color: #F99F38;
 }
 
+.search-bar {
+    width: 100px;
+}
+
+.dropdown-menu.show {
+    left: 0;
+}
+
 
 /* button */
 
