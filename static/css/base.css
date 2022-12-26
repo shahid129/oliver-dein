@@ -189,6 +189,15 @@ li.nav-item {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* zoom on hover on any product */
+.product {
+    transition: transform .2s
+}
+
+.product:hover {
+    transform: scale(1.02);
+}
+
 /* ------------------------ Media Queries */
 
 @media (min-width: 768px) {
