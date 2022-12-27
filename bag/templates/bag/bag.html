@@ -66,8 +66,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="update-link text-info"><small>Update</small></a>
-                                    <a class="remove-item text-danger" id="remove_{{ item.slug }}" data-product-size="{{ item.size }}"><small>Delete</small></a>
+                                    <a class="update-link btn mt-2"><small>Update</small></a>
+                                    <a class="remove-item btn btn-outline-danger mt-2" id="remove_{{ item.slug }}" data-product-size="{{ item.size }}"><small>Delete</small></a>
 
                                 </td>
                                 <td class="py-3 w-25">
@@ -84,9 +84,9 @@
                                 </td>
                                 <td class="py-3 text-center">
                                     {% if item.product.discount_price %}
-                                        <p class="my-0">${{ item.product.discount_price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0">€{{ item.product.discount_price | calc_subtotal:item.quantity }}</p>
                                     {% else%}
-                                        <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     {% endif %}
                                 </td>
                             </tr>

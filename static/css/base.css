@@ -198,6 +198,24 @@ li.nav-item {
     transform: scale(1.02);
 }
 
+.btn-outline-danger {
+    background-color: white;
+    color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.increment-qty, 
+.decrement-qty {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
 /* ------------------------ Media Queries */
 
 @media (min-width: 768px) {
