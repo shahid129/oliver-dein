@@ -49,7 +49,7 @@ def webhook(request):
 
     # if there is a handler for it, get it from the event map
     # use the generic one by default
-    event_handler = event_map.get(event_type, handler.handle_event(event))
+    event_handler = event_map.get(event_type, handler.handle_event)
 
     # call the event handler with th event
 
