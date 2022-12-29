@@ -59,7 +59,7 @@
                     {% if user.is_superuser %}
                         <li><a class="dropdown-item" href="#">Stock Management</a></li>
                     {% endif%}
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'profile' %}">My Profile</a></li>
                         <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
                 {% else %}
                         <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>

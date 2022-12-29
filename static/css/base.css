@@ -216,6 +216,22 @@ li.nav-item {
 
 }
 
+/* Allauth form formatting */
+/* add margint to fields */
+.allauth-form-inner-content input {
+    margin: 12px 0;
+}
+
+/* hide all label in the form but remember me */
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+/* add margin to remember me */
+.allauth-form-inner-content label {
+    margin-top: 8px;
+}
+
 /* ------------------------ Media Queries */
 
 @media (min-width: 768px) {
