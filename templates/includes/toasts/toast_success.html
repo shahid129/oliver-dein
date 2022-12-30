@@ -14,7 +14,7 @@
         </div>
 
         <div class="col">
-            {% if grand_total and not_on_profile_page %}
+            {% if grand_total and not on_profile_page %}
             <p class="py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-notification">
                 {% for item in bag_items %}
