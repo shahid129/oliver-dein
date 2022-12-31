@@ -27,6 +27,8 @@ li.nav-item {
     width: 160px;
 }
 
+/* --------------- footer */
+
 .footer-menu a{
     font-size: small;
 }
@@ -189,13 +191,14 @@ li.nav-item {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* zoom on hover on any product */
+/* Add shadow hover on any product */
 .product {
-    transition: transform .2s
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .product:hover {
-    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .btn-outline-danger {
