@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
-from .models import Contact
+from .models import Contact, Address
 from .forms import ContactForm
 
 
@@ -17,8 +17,11 @@ def contact(request):
             messages.success(request, 'Messae submitted succesfully')
 
     form = ContactForm
+    compnay_address = Address.objects.all()
+
     context = {
-        'form': form
+        'form': form,
+        'compnay_address': compnay_address,
     }
 
     template = 'contact/contact.html'

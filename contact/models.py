@@ -33,3 +33,14 @@ class Contact(models.Model):
 
     def __str__(self):
         return f'Message from {self.name}'
+
+
+class Address(models.Model):
+    """
+    Admin can add or update company address for the page
+    """
+    address = models.CharField(max_length=200)
+    phone = models.CharField(max_length=58)
+    phone2 = models.CharField(max_length=58, blank=True, null=True)
+    email = models.EmailField(max_length=100)
+    email2 = models.EmailField(max_length=100, blank=True, null=True)
