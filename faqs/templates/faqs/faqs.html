@@ -4,7 +4,11 @@
 {% block content %}
 <div class="container text-center my-3">
     <h2>Oliver Dein</h2>
-    <p>FAQs</p>
+    <p>FAQs
+    {% if request.user.is_superuser %}
+        <a href="{% url 'add_faqs' %}"> Add FAQs</a>
+    {% endif %}
+    </p>
     <small class="text-muted">The following document outlines the FAQs for the oliverdein website.</small>
 </div>
 

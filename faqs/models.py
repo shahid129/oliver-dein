@@ -13,6 +13,7 @@ class Faqs(models.Model):
     OTHER = 'OT'
 
     CATEGORY = [
+        ('', 'Select Category ↓'),
         (ORDER, 'Order'),
         (DELIVERY, 'Delivery'),
         (ACCOUNT, 'Account'),
