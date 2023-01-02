@@ -2,17 +2,127 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-    {% for f in faqs %}
-        {% if f.category == 'OR' %}
-        <p> {{ f.questions }}</p>
-        <p>{{ f.answers }}</p> 
-        {% endif%}
+<div class="container text-center my-3">
+    <h2>Oliver Dein</h2>
+    <p>FAQs</p>
+    <small class="text-muted">The following document outlines the FAQs for the oliverdein website.</small>
+</div>
 
-        {% if f.category == 'AC' %}
-        <p> {{ f.questions }}</p>
-        <p>{{ f.answers }}</p> 
-        {% endif%}
-    {% endfor %}
+<div class="container">
+    <div class="accordion " id="faq-order-accordion">
+        <div class="">
+            <h2 class="mb-0 mt-3">Orders</h2>
+            {% for f in faqs %}
+            {% if f.category == 'OR' %}
+            <div class="py-3" id="f-head-{{ faq.id }}">
+                <h5 class="mb-0">
+                    <h5 class="faqs" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-target="#f-{{f.id}}" 
+                        aria-expanded="true" aria-controls="f-{{f.id}}">
+                        {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
+                    </h5>
+                </h5>
+            </div>
+
+            <div id="f-{{f.id}}" class="collapse" aria-labelledby="f-head-{{ faq.id }}" data-parent="#faq-order-accordion">
+                <div class="card-body">
+                    {{ f.answers }}
+                </div>
+            </div>
+            {% endif%}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="accordion " id="accordionExample">
+        <div class="">
+            <h2 class="mb-0 mt-3">Delivery</h2>
+            {% for f in faqs %}
+            {% if f.category == 'DL' %}
+            <div class="py-3" id="f-head-{{ faq.id }}">
+                <h5 class="mb-0">
+                    <h5 class="faqs" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-target="#f-{{f.id}}" 
+                        aria-expanded="true" aria-controls="f-{{f.id}}">
+                        {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
+                    </h5>
+                </h5>
+            </div>
+
+            <div id="f-{{f.id}}" class="collapse" aria-labelledby="f-head-{{ faq.id }}" data-parent="#faq-order-accordion">
+                <div class="card-body">
+                    {{ f.answers }}
+                </div>
+            </div>
+            {% endif%}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="accordion " id="accordionExample">
+        <div class="">
+            <h2 class="mb-0 mt-3">Account</h2>
+            {% for f in faqs %}
+            {% if f.category == 'AC' %}
+            <div class="py-3" id="f-head-{{ faq.id }}">
+                <h5 class="mb-0">
+                    <h5 class="faqs" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-target="#f-{{f.id}}" 
+                        aria-expanded="true" aria-controls="f-{{f.id}}">
+                        {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
+                    </h5>
+                </h5>
+            </div>
+
+            <div id="f-{{f.id}}" class="collapse" aria-labelledby="f-head-{{ faq.id }}" data-parent="#faq-order-accordion">
+                <div class="card-body">
+                    {{ f.answers }}
+                </div>
+            </div>
+            {% endif%}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="accordion " id="accordionExample">
+        <div class="">
+            <h2 class="mb-0 mt-3">Product</h2>
+            {% for f in faqs %}
+            {% if f.category == 'PR' %}
+            <div class="py-3" id="f-head-{{ faq.id }}">
+                <h5 class="mb-0">
+                    <h5 class="faqs" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-target="#f-{{f.id}}" 
+                        aria-expanded="true" aria-controls="f-{{f.id}}">
+                        {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
+                    </h5>
+                </h5>
+            </div>
+
+            <div id="f-{{f.id}}" class="collapse" aria-labelledby="f-head-{{ faq.id }}" data-parent="#faq-order-accordion">
+                <div class="card-body">
+                    {{ f.answers }}
+                </div>
+            </div>
+            {% endif%}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="accordion mb-3" id="accordionExample">
+        <div class="">
+            <h2 class="mb-0 mt-3">Other</h2>
+            {% for f in faqs %}
+            {% if f.category == 'OT' %}
+            <div class="py-3" id="f-head-{{ faq.id }}">
+                <h5 class="mb-0">
+                    <h5 class="faqs" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-target="#f-{{f.id}}" 
+                        aria-expanded="true" aria-controls="f-{{f.id}}">
+                        {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
+                    </h5>
+                </h5>
+            </div>
+
+            <div id="f-{{f.id}}" class="collapse" aria-labelledby="f-head-{{ faq.id }}" data-parent="#faq-order-accordion">
+                <div class="card-body">
+                    {{ f.answers }}
+                </div>
+            </div>
+            {% endif%}
+            {% endfor %}
+        </div>
+    </div>
 </div>
 {% endblock %}

@@ -265,6 +265,12 @@ li.nav-item {
     border-radius: 0;
 }
 
+/* ------------------------FAQS */
+
+.faqs:hover {
+    color: #F99F38;
+}
+
 /* ------------------------ Media Queries */
 
 @media (min-width: 768px) {
