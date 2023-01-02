@@ -11,7 +11,7 @@
             <div class="row">
                 <h4 class="mb-4 text-center my-3">Address</h4>
                 <div class="container card text-center pt-4">
-                    {% for address in compnay_address %}
+                    {% for address in company_address %}
                         <p>Address: {{ address.address }}</p>
                         <p>Phone: {{ address.phone }}</p>
                         <p>{{ address.phone2 | default_if_none:'' }}</p>
