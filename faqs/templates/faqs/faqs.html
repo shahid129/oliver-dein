@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    {% for f in faqs %}
+        {% if f.category == 'OR' %}
+        <p> {{ f.questions }}</p>
+        <p>{{ f.answers }}</p> 
+        {% endif%}
+
+        {% if f.category == 'AC' %}
+        <p> {{ f.questions }}</p>
+        <p>{{ f.answers }}</p> 
+        {% endif%}
+    {% endfor %}
+</div>
+{% endblock %}
