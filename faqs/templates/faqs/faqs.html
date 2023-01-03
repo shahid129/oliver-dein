@@ -26,6 +26,7 @@
                     </h5>
                     {% if request.user.is_superuser %}
                         <small><a class="faqs text-decoration-none" href="{% url 'edit_faqs' f.id %}"> Edit FAQs</a></small>
+                        | <small><a class="faqs text-decoration-none" href="{% url 'delete_faqs' f.id %}"> Delete FAQs</a></small>
                     {% endif %}
                 </h5>
             </div>

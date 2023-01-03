@@ -62,3 +62,17 @@ def edit_faqs(request, item_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_faqs(request, item_id):
+    """
+    Delete a faqs
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry! Only superuser is allowed to do that')
+        return redirect(reverse('home'))
+    item = get_object_or_404(Faqs, pk=item_id)
+    item.delete()
+    messages.success(request, f'{item} is deleted successfully')
+    return redirect('faqs')
