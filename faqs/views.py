@@ -6,6 +6,9 @@ from .forms import FaqsForm
 
 
 def faqs(request):
+    """
+    Dispaly faqs in the faqs page
+    """
     faqs = Faqs.objects.all()
 
     template = 'faqs/faqs.html'
@@ -19,6 +22,12 @@ def faqs(request):
 
 @login_required
 def add_faqs(request):
+    """
+    Add a new faqs to the store
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry! You are not authorised to do that')
+        return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = FaqsForm(request.POST)
@@ -41,6 +50,12 @@ def add_faqs(request):
 
 @login_required
 def edit_faqs(request, item_id):
+    """
+    Edit a faqs and update to the store
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry! You are not authorised to do that')
+        return redirect(reverse('home'))
 
     item = get_object_or_404(Faqs, pk=item_id)
 
@@ -67,10 +82,10 @@ def edit_faqs(request, item_id):
 @login_required
 def delete_faqs(request, item_id):
     """
-    Delete a faqs
+    Delete a faqs from the store
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry! Only superuser is allowed to do that')
+        messages.error(request, 'Sorry! You are not authorised to do that')
         return redirect(reverse('home'))
     item = get_object_or_404(Faqs, pk=item_id)
     item.delete()
