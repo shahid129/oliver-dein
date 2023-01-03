@@ -31,7 +31,7 @@
             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.slug %}">
                 {% csrf_token %}
                 <div class="form-group">
-                    <div class="input-group">
+                    <div class="input-group my-3">
                         <div class="input-group-prepend me-1">
                             <button class="decrement-qty btn btn-sm btn-black rounded-0"
                                 data-item_id="{{ item.slug }}" id="decrement-qty_{{ item.slug }}">
@@ -57,8 +57,13 @@
                     </div>
                 </div>
             </form>
-            <a class="update-link btn mt-2"><small>Update</small></a>
-            <a class="remove-item btn btn-outline-danger mt-2" id="remove_{{ item.slug }}" data-product-size="{{ item.size }}"><small>Delete</small></a>
+            <a class="update-link btn mb-3"><small>Update</small></a>
+            <!-- <a class="remove-item btn btn-outline-danger mt-2" id="remove_{{ item.slug }}" data-product-size="{{ item.size }}"><small>Delete</small></a> -->
+            <a type="button" class="remove-item btn btn-outline-danger mb-3" data-toggle="modal" data-target="#{{ item.slug }}">
+                <small>Delete</small>
+            </a>
+            <!-- Modal to confirmation to remove from basket -->
+            {% include 'bag/includes/remove_from_bag.html' %}
         </div>
     </div>
 {% endfor %}
