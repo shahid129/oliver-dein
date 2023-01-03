@@ -37,3 +37,28 @@ def add_faqs(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_faqs(request, item_id):
+
+    item = get_object_or_404(Faqs, pk=item_id)
+
+    if request.method == 'POST':
+        form = FaqsForm(request.POST, instance=item)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'FAQs updated successfully.')
+            return redirect('faqs')
+        else:
+            messages.info(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = FaqsForm(instance=item)
+
+    template = 'faqs/edit_faqs.html'
+    context = {
+        'form': form,
+        'item': item,
+    }
+
+    return render(request, template, context)

@@ -6,7 +6,7 @@
     <h2>Oliver Dein</h2>
     <p>FAQs
     {% if request.user.is_superuser %}
-        <a href="{% url 'add_faqs' %}"> Add FAQs</a>
+        | <a href="{% url 'add_faqs' %}"> Add FAQs</a>
     {% endif %}
     </p>
     <small class="text-muted">The following document outlines the FAQs for the oliverdein website.</small>
@@ -24,6 +24,9 @@
                         aria-expanded="true" aria-controls="f-{{f.id}}">
                         {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
                     </h5>
+                    {% if request.user.is_superuser %}
+                        <small><a class="faqs text-decoration-none" href="{% url 'edit_faqs' f.id %}"> Edit FAQs</a></small>
+                    {% endif %}
                 </h5>
             </div>
 
@@ -47,6 +50,9 @@
                         aria-expanded="true" aria-controls="f-{{f.id}}">
                         {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
                     </h5>
+                    {% if request.user.is_superuser %}
+                        <small><a class="faqs text-decoration-none" href="{% url 'edit_faqs' f.id %}"> Edit FAQs</a></small>
+                    {% endif %}
                 </h5>
             </div>
 
@@ -70,6 +76,9 @@
                         aria-expanded="true" aria-controls="f-{{f.id}}">
                         {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
                     </h5>
+                    {% if request.user.is_superuser %}
+                        <small><a class="faqs text-decoration-none" href="{% url 'edit_faqs' f.id %}"> Edit FAQs</a></small>
+                    {% endif %}
                 </h5>
             </div>
 
@@ -93,6 +102,9 @@
                         aria-expanded="true" aria-controls="f-{{f.id}}">
                         {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
                     </h5>
+                    {% if request.user.is_superuser %}
+                        <small><a class="faqs text-decoration-none" href="{% url 'edit_faqs' f.id %}"> Edit FAQs</a></small>
+                    {% endif %}
                 </h5>
             </div>
 
@@ -116,6 +128,9 @@
                         aria-expanded="true" aria-controls="f-{{f.id}}">
                         {{ f.questions }} <i class="fa-solid fa-arrow-down float-end"></i>
                     </h5>
+                    {% if request.user.is_superuser %}
+                        <small><a class="faqs text-decoration-none" href="{% url 'edit_faqs' f.id %}"> Edit FAQs</a></small>
+                    {% endif %}
                 </h5>
             </div>
 
