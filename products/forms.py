@@ -1,6 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category
+from .models import Product, Category, Comment
 
 
 class ProductForm(forms.ModelForm):
@@ -11,3 +11,15 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
     image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+
+
+class CommentForm(forms.ModelForm):
+    """
+    Create a customer comment form
+    """
+    class Meta:
+        """
+        Available fields for customer comment form
+        """
+        model = Comment
+        fields = ('name', 'body',)

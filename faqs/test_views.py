@@ -152,4 +152,3 @@ class TestViews(TestCase):
         message = list(response.context.get('messages'))[0]
         self.assertEqual(message.tags, "error")
         self.assertTrue('Sorry! You are not authorised to do that' in message.message)
-
