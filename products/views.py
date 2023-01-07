@@ -73,11 +73,11 @@ def product_detail(request, slug):
         if comment_form.is_valid():
 
             new_comment = comment_form.save(commit=False)
-            new_comment.post = product
+            new_comment.product = product
             new_comment.save()
 
             messages.info(request, 'Waiting to be approved!')
-            return redirect(reverse('products'))
+            return redirect(reverse('product_detail', args=[product.slug]))
     else:
         comment_form = CommentForm()
 
