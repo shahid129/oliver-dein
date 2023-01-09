@@ -279,7 +279,19 @@ li.nav-item {
     object-fit: cover;
 }
 
+/* ------------------------ Carosel/ Review/ comment section */
+
+.carousel-width {
+    /* margin: 0 100px 0 100px; */
+    max-width: 500px;
+    margin: auto;
+}
+.comment-body {
+    max-height: 200px;
+}
+
 /* ------------------------ Media Queries */
+
 
 @media (min-width: 768px) {
 
