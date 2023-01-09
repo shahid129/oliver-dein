@@ -124,7 +124,6 @@ class TestViews(TestCase):
         self.assertEqual(message.tags, "error")
         self.assertTrue('Sorry! You are not authorised to do that' in message.message)
 
-
     def test_only_superuser_can_edit(self):
         """
         Test if the edit view lets you edit the faqs
