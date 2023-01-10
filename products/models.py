@@ -24,9 +24,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     discount_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    has_color = models.BooleanField(default=False, null=True, blank=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.FileField(null=True, blank=True)
