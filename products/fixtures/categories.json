@@ -1,0 +1,114 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "Dining Tables"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "Couch"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "Chair"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "All Furniture"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "Toy Storage"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "Children Wardrobe"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "Cots"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "All Nursery"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "Beds"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "Mattresses"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+        "name": "Headboards"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 12,
+    "fields": {
+        "name": "All Bed and Mattresses"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 13,
+    "fields": {
+        "name": "Cabinets"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 14,
+    "fields": {
+        "name": "Appliances"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 15,
+    "fields": {
+        "name": "Taps and Sinks"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 16,
+    "fields": {
+        "name": "All KitchenProducts"
+    }
+}
+]

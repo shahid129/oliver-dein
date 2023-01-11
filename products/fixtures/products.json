@@ -1,0 +1,989 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "Dining Tables"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "Couch"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "Chair"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "All Furniture"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "Toy Storage"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "Children Wardrobe"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "Cots"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "All Nursery"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "Beds"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "Mattresses"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
+        "name": "Headboards"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 12,
+    "fields": {
+        "name": "All Bed and Mattresses"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 13,
+    "fields": {
+        "name": "Cabinets"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 14,
+    "fields": {
+        "name": "Appliances"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 15,
+    "fields": {
+        "name": "Taps and Sinks"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 16,
+    "fields": {
+        "name": "All KitchenProducts"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "sku": "1001",
+        "name": "Otobi Dining Table",
+        "slug": "otobi-dining-table",
+        "description": "The table's size can be quickly and easily adjusted to meet your various demands. You may extend the table to seat 4 to 6 people by storing the extra leaf underneath the tabletop.\r\n\r\nThe hidden locking mechanism maintains the extra leaf in place and eliminates gaps between the top and leaf.\r\n\r\neasily extended by a single person.\r\n\r\nThe spare leaf can be kept underneath the tabletop, easily accessible.\r\n\r\nThe surface of the clear lacquer is simple to clean.",
+        "price": "199.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.70",
+        "image_url": null,
+        "image": "dining-table-1.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "sku": "1002",
+        "name": "Modern Otobi Dining table",
+        "slug": "modern-otobi-dining-table",
+        "description": "4-6 people can be seated at an extendable dining table with 1 additional leaf, which allows you to customize the table size.\r\n\r\nWhen using the table without extending it, there are no seams because to the clever design.\r\n\r\nWhen you draw out the table to make extra space for chairs around the table, the table legs move along with it.\r\n\r\nThe melamine table surface resists moisture, stains, and is simple to clean.\r\n\r\nUnder the table top, there is space to store the additional leaf conveniently.\r\n\r\neasily extended by a single person.",
+        "price": "220.00",
+        "discount_price": "190.00",
+        "has_sizes": false,
+        "rating": "4.50",
+        "image_url": null,
+        "image": "dining-table-2.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "sku": "1003",
+        "name": "Dining table with glass top",
+        "slug": "dining-table-with-glass-top",
+        "description": "The Red Dot Design Award was given to our LISABO table series in 2016 for its clever design and handcrafted appearance.\r\n\r\nSince there is only one fitting per leg, assembly is simple.\r\n\r\nAsh is a robust hardwood with an attractive grain pattern. The color moderately intensifies toward a deep straw color as it ages.\r\n\r\nThe table's ash veneer top and solid birch legs offer your area a cozy, organic vibe.\r\n\r\nThis table has passed our rigorous stability, durability, and safety tests to withstand years of regular usage in your house.",
+        "price": "310.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.40",
+        "image_url": null,
+        "image": "dininig-table-3.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "sku": "2004",
+        "name": "Otobi long dining table",
+        "slug": "otobi-long-dining-table",
+        "description": "The Red Dot Design Award was given to our OTOBI table series in 2016 for its clever design and handcrafted appearance.\r\n\r\nBigger family bigger choice.\r\n\r\nAsh is a robust hardwood with an attractive grain pattern. The color moderately intensifies toward a deep straw color as it ages.\r\n\r\nThe table's ash veneer top and solid birch legs offer your area a cozy, organic vibe.\r\n\r\nThis table has passed our rigorous stability, durability, and safety tests to withstand years of regular usage in your house.",
+        "price": "420.00",
+        "discount_price": "390.00",
+        "has_sizes": false,
+        "rating": "4.70",
+        "image_url": null,
+        "image": "dininig-table-4.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 2,
+        "sku": "2005",
+        "name": "Luxury Oliver Dein couch",
+        "slug": "luxury-oliver-dein-couch",
+        "description": "High resiliency foam and polyester fiber wadding seat cushions provide your body with excellent support and quickly take on their original shape after you stand up.\r\n\r\nBack cushions that may be worn on either side and are packed with polyester fibers offer gentle back support.\r\n\r\nThis cover is constructed of polyester dope-dyed Totebo cloth. It has a lovely tone-on-tone coloring and a smooth, long-lasting weave.\r\n\r\nThe cover is simple to maintain because it is machine washable and simple to remove and reinstall.\r\n\r\nIt is simple to change the appearance of your sofa and space by using additional covers to alternate with.",
+        "price": "499.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.80",
+        "image_url": null,
+        "image": "couch-1.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 2,
+        "sku": "2006",
+        "name": "Oliver Dein Luxury Leather Couch",
+        "slug": "oliver-dein-luxuy-leather-couch",
+        "description": "High resiliency foam and polyester fiber wadding seat cushions provide your body with excellent support and quickly take on their original shape after you stand up.\r\n\r\n\r\nThis cover is constructed of polyeste cloth. It has a lovely tone-on-tone coloring and a smooth, long-lasting weave.\r\n\r\nThe cover is simple to maintain because it is machine washable and simple to remove and reinstall.\r\n\r\nIt is simple to change the appearance of your sofa and space by using additional covers to alternate with.",
+        "price": "490.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.90",
+        "image_url": null,
+        "image": "couch-2.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 2,
+        "sku": "2007",
+        "name": "Luxury Corner Seater",
+        "slug": "luxury-corner-seater",
+        "description": "High resiliency foam and polyester fiber wadding seat cushions provide your body with excellent support and easily restore their shape when you stand up.\r\n\r\nWith two separate wearable sides, reversible polyester fiber-filled back cushions offer gentle back support.\r\n\r\nTotebo cloth in polyester dope-dyed was used to make this cover. The cover has a wonderful tone-on-tone coloring and is made of a smooth, strong weave.\r\n\r\nDue to its machine washability and ease of removal and reinstallation, the cover is simple to keep clean.\r\n\r\nIt is simple to give your sofa and space a new look by alternating between extra coverings.",
+        "price": "670.00",
+        "discount_price": "420.00",
+        "has_sizes": false,
+        "rating": "4.80",
+        "image_url": null,
+        "image": "couch-3.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 2,
+        "sku": "2008",
+        "name": "Oliver Dein modern style seater",
+        "slug": "oliver-dein-modern-style-seater",
+        "description": "High resiliency foam and polyester fiber wadding seat cushions provide your body with excellent support and easily restore their shape when you stand up.\r\n\r\nWith two separate wearable sides, reversible polyester fiber-filled back cushions offer gentle back support.\r\n\r\nTotebo cloth in polyester dope-dyed was used to make this cover. The cover has a wonderful tone-on-tone coloring and is made of a smooth, strong weave.\r\n\r\nDue to its machine washability and ease of removal and reinstallation, the cover is simple to keep clean.\r\n\r\nIt is simple to give your sofa and space a new look by alternating between extra coverings.",
+        "price": "390.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.40",
+        "image_url": null,
+        "image": "couch-4_1RApq7A.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 3,
+        "sku": "2009",
+        "name": "Wing Chair",
+        "slug": "wing-chair",
+        "description": "Make your living into light and bright living room with our special Wing chait\r\n\r\nSkiftebo polyester cloth, which is strong, was used to make this cover. It feels strong to the touch and has a wonderful two-tone look with a light texture.",
+        "price": "55.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.20",
+        "image_url": null,
+        "image": "chair-1.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 3,
+        "sku": "2011",
+        "name": "Otobi chair",
+        "slug": "otobi-chair",
+        "description": "GET TWO FOR THE PRICE OF ONE\r\n\r\nThe shape of the armchair provides nice support for the lumbar region.\r\n\r\nThe fixed cover HAKEBO feels soft and smooth and has a nice texture that makes the sofa comfortable and inviting.\r\n\r\n10 year guarantee. Read about the terms in the guarantee brochure.",
+        "price": "139.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.30",
+        "image_url": null,
+        "image": "chair-2.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 3,
+        "sku": "2011",
+        "name": "Oliver Dein Garden Chair",
+        "slug": "oliver-dein-garden-chair",
+        "description": "Perfect for any occasions.\r\nFor added durability and so you can enjoy the natural expression of the wood, the furniture has been pre-treated with a layer of semi-transparent wood stain.\r\n\r\nSuitable for both indoor and outdoor use.",
+        "price": "35.00",
+        "discount_price": "29.00",
+        "has_sizes": false,
+        "rating": "4.10",
+        "image_url": null,
+        "image": "chair-3.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "category": 3,
+        "sku": "2012",
+        "name": "Otobi chair red",
+        "slug": "otobi-chair-red",
+        "description": "Since the plastic is both fade resistant and UV stabilized to avoid cracking and drying out, the easy chair will look newer and last longer.\r\n\r\nmay be layered, allowing you to save space.\r\n\r\nWater can flow out of the seat's drain hole.\r\n\r\nSimply wipe with a moist towel to stay clean.",
+        "price": "55.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.20",
+        "image_url": null,
+        "image": "chair-4.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "category": 5,
+        "sku": "2013",
+        "name": "Toy Storage Cabinet",
+        "slug": "toy-storage-cabinet",
+        "description": "A fun and durable storage series for sitting, playing, and unwinding, as well as organizing and storing toys.\r\n\r\nBecause of the frame's numerous grooves, you may position boxes and shelves wherever you choose and swap them out whenever you want.\r\n\r\nLow storage makes it simpler for kids to access and arrange their belongings.",
+        "price": "45.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.60",
+        "image_url": null,
+        "image": "toy-storage-1.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "category": 5,
+        "sku": "2014",
+        "name": "Teddy Storage",
+        "slug": "teddy-storage",
+        "description": "A fun and durable storage for all kinds of teddies as well as organizing and storing toys.\r\n\r\nBecause of the frame's numerous grooves, you may position boxes and shelves wherever you choose and swap them out whenever you want.\r\n\r\nLow storage makes it simpler for kids to access and arrange their belongings.",
+        "price": "180.00",
+        "discount_price": "120.00",
+        "has_sizes": false,
+        "rating": "4.10",
+        "image_url": null,
+        "image": "toy-storage-2.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "category": 5,
+        "sku": "2015",
+        "name": "Oliver dein toy storage",
+        "slug": "oliver-dein-toy-storage",
+        "description": "Storage combination with boxes, Children need room for play – and good storage for toys like Oliver dein toy storage – a series of sturdy wooden frames and lightweight plastic boxes that your child can easily slide out, carry and put back again.",
+        "price": "99.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.30",
+        "image_url": null,
+        "image": "toy-storage-3.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "category": 5,
+        "sku": "2016",
+        "name": "Fun size toy storage",
+        "slug": "fun-size-toy-storage",
+        "description": "Storage combination with boxes, white/yellow orange and blue\r\nToy organization and storage made fun and easy with this storage series.\r\n\r\nBoxes and shelves can be placed and moved around at any moment thanks to the frame's guiding rails.\r\n\r\nVertical storage conserves space and is useful in compact areas.",
+        "price": "150.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.40",
+        "image_url": null,
+        "image": "toy-storage-4.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "category": 6,
+        "sku": "2016",
+        "name": "Fun Size wardrobe",
+        "slug": "fun-size-wardrobe",
+        "description": "The frame's small size makes it ideal for spaces with limited space.\r\n\r\nAll corners of FUN SIZE doors are softly rounded so that you and your child can avoid cutting edges.\r\n\r\nEven after a heated debate, the doors' soft-closing hinges cause them to close softly and quietly.\r\n\r\nThe cleverly constructed runners cause the drawer to gradually retreat when opened, conserving space.\r\n\r\nThe likelihood that clothes, backpacks, and accessories will return to the closet and not end up on the floor is greatly increased by the presence of hooks on the clothes rail.",
+        "price": "299.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.60",
+        "image_url": null,
+        "image": "kids-wardrobe-1.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "category": 6,
+        "sku": null,
+        "name": "Otobi Bedside Wardrobe",
+        "slug": "otobi-bedside-wardrobe",
+        "description": "The frame's small size makes it ideal for spaces with limited space.\r\n\r\nAll corners of Otobi Bedside Wardrobe doors are softly rounded so that you and your child can avoid cutting edges.\r\n\r\nEven after a heated debate, the doors' soft-closing hinges cause them to close softly and quietly.\r\n\r\nThe cleverly constructed runners cause the drawer to gradually retreat when opened, conserving space.\r\n\r\nThe likelihood that clothes, backpacks, and accessories will return to the closet and not end up on the floor is greatly increased by the presence of hooks on the clothes rail.",
+        "price": "330.00",
+        "discount_price": "270.00",
+        "has_sizes": false,
+        "rating": "4.90",
+        "image_url": null,
+        "image": "kids-wardrobe-2.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "category": 6,
+        "sku": "2018",
+        "name": "Oilver Dein wardrobe",
+        "slug": "oilver-dein-wardrobe",
+        "description": "You can keep both hanging and folded clothes in this wardrobe, since it has a clothes rail and shelves.\r\n\r\nDeep enough to hold standard-sized adult hangers.",
+        "price": "99.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.10",
+        "image_url": null,
+        "image": "kids-wardrobe-3.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "category": 6,
+        "sku": "2019",
+        "name": "Fun Size Full set wardrobe",
+        "slug": "fun-size-full-set-wardrobe",
+        "description": "Because of their shorter stature and less developed motor abilities, younger children can reach and hang their own clothing back up in this wardrobe.\r\n\r\nYou can change and modify the interior of the wardrobe to suit your child's demands.\r\n\r\nDue to the adjustable feet that are included, it stands firmly even on uneven floors.\r\n\r\nThe doors' soft-closing hinges allow for a quiet and gentle closure.",
+        "price": "450.00",
+        "discount_price": "320.00",
+        "has_sizes": false,
+        "rating": "4.60",
+        "image_url": null,
+        "image": "kids-wardrobe-4.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "category": 7,
+        "sku": "2021",
+        "name": "Oliver Dein Cot",
+        "slug": "oliver-dein-cot",
+        "description": "Because the sturdy materials in the cot foundation have been tested to guarantee they provide your baby's body with the support it needs, they will sleep both safely and comfortably.\r\n\r\nThe base of the cot is properly vented for optimal air circulation, providing your youngster with a comfortable sleeping environment.",
+        "price": "120.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.90",
+        "image_url": null,
+        "image": "cot-1.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "category": 7,
+        "sku": "2024",
+        "name": "Fun Size baby cot",
+        "slug": "fun-size-baby-cot",
+        "description": "Because the sturdy materials in the cot foundation have been tested to guarantee they provide your baby's body with the support it needs, they will sleep both safely and comfortably.\r\n\r\nThe base of the cot is properly vented for optimal air circulation, providing your youngster with a comfortable sleeping environment.",
+        "price": "150.00",
+        "discount_price": "130.00",
+        "has_sizes": false,
+        "rating": "3.90",
+        "image_url": null,
+        "image": "cot-2.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "category": 7,
+        "sku": "2024",
+        "name": "Oliver Dein Moses Basket",
+        "slug": "oliver-dein-moses-basket",
+        "description": "Because the sturdy materials in the basket foundation have been tested to guarantee they provide your baby's body with the support it needs, they will sleep both safely and comfortably.\r\n\r\nThe base of the basket is properly vented for optimal air circulation, providing your youngster with a comfortable sleeping environment.",
+        "price": "55.00",
+        "discount_price": null,
+        "has_sizes": true,
+        "rating": "3.30",
+        "image_url": null,
+        "image": "cot-3.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "category": 7,
+        "sku": "2025",
+        "name": "Otobi moses basket",
+        "slug": "otobi-moses-basket",
+        "description": "Because the sturdy materials in the basket foundation have been tested to guarantee they provide your baby's body with the support it needs, they will sleep both safely and comfortably. The base of the basket is properly vented for optimal air circulation, providing your youngster with a comfortable sleeping environment.",
+        "price": "75.00",
+        "discount_price": "60.00",
+        "has_sizes": false,
+        "rating": "4.10",
+        "image_url": null,
+        "image": "cot-4.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "category": 9,
+        "sku": "2033",
+        "name": "Oliver Dein Divan bed",
+        "slug": "oliver-dein-divan-bed",
+        "description": "This Oliver Dein Divan double  bed frame provides you with a cozy area to rest and sleep as well as useful under-bed storage with its two upholstered storage compartments.\r\n\r\nThe bed storage bins are the same shade of grey as the bed frame's KABUSA cover, and they slide right under the mattress.\r\n\r\nThe castors on the base make it simple to roll the storage boxes out and in.",
+        "price": "350.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.30",
+        "image_url": null,
+        "image": "bed-1.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "category": 9,
+        "sku": "2034",
+        "name": "Oliver Dein modern oak wood modern bed",
+        "slug": "oliver-dein-modern-oak-wood-modern-bed",
+        "description": "This Oliver Dein Divan king size bed frame provides you with a cozy area to rest and sleep as well as useful under-bed storage with its two upholstered storage compartments. The bed storage bins are the same shade of grey as the bed frame's KABUSA cover, and they slide right under the mattress. The castors on the base make it simple to roll the storage boxes out and in.",
+        "price": "390.00",
+        "discount_price": "320.00",
+        "has_sizes": false,
+        "rating": "4.70",
+        "image_url": null,
+        "image": "bed-2.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "category": 9,
+        "sku": "2034",
+        "name": "Otobi Divan bed double",
+        "slug": "otobi-divan-bed-double",
+        "description": "This Oliver Otobi Divan bed double bed frame provides you with a cozy area to rest and sleep as well as useful under-bed storage with its two upholstered storage compartments. The bed storage bins are the same shade of grey as the bed frame's Otobi Divan bed double cover, and they slide right under the mattress. The castors on the base make it simple to roll the storage boxes out and in.",
+        "price": "330.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.10",
+        "image_url": null,
+        "image": "bed-3.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "category": 9,
+        "sku": null,
+        "name": "Funsize double bed",
+        "slug": "funsize-double-bed",
+        "description": "This Oliver Funsize double bed frame provides you with a cozy area to rest and sleep as well as useful under-bed storage with its two upholstered storage compartments. The bed storage bins are the same shade of grey as the bed frame's Funsize double bed cover, and they slide right under the mattress. The castors on the base make it simple to roll the storage boxes out and in.",
+        "price": "390.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.90",
+        "image_url": null,
+        "image": "bed-4.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "category": 10,
+        "sku": "2034",
+        "name": "Oliver Dein lazy mattress",
+        "slug": "oliver-dein-lazy-mattress",
+        "description": "Wherever you require firm or soft support, the mattress' comfort zones and pocket springs that move separately can deliver it.\r\n\r\nThe mattress' five comfort zones provide very specific support and alleviate pressure on your shoulders and hips.\r\n\r\nIf you have a tendency to move a lot while sleeping, individually wrapped pocket springs will isolate movements so you won't wake up your companion.",
+        "price": "229.00",
+        "discount_price": null,
+        "has_sizes": true,
+        "rating": "4.40",
+        "image_url": null,
+        "image": "bed-1_MEiWyA4.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "category": 10,
+        "sku": null,
+        "name": "oliver dein wakey mattress",
+        "slug": "oliver-dein-wakey-mattress",
+        "description": "Wherever you require firm or soft support, the mattress' comfort zones and pocket springs that move separately can deliver it.\r\n\r\nThe mattress' five comfort zones provide very specific support and alleviate pressure on your shoulders and hips.\r\n\r\nIf you have a tendency to move a lot while sleeping, individually wrapped pocket springs will isolate movements so you won't wake up your companion.",
+        "price": "299.00",
+        "discount_price": "199.00",
+        "has_sizes": true,
+        "rating": "3.00",
+        "image_url": null,
+        "image": "bed-3_XQZNshM.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "category": 10,
+        "sku": "2037",
+        "name": "Otobi Special Edition mattress",
+        "slug": "otobi-special-edition-mattress",
+        "description": "Wherever you require firm or soft support, the mattress' comfort zones and pocket springs that move separately can deliver it.\r\n\r\nThe mattress' five comfort zones provide very specific support and alleviate pressure on your shoulders and hips.\r\n\r\nIf you have a tendency to move a lot while sleeping, individually wrapped pocket springs will isolate movements so you won't wake up your companion.",
+        "price": "360.00",
+        "discount_price": null,
+        "has_sizes": true,
+        "rating": "4.30",
+        "image_url": null,
+        "image": "bed-2_uWoi8bf.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "category": 10,
+        "sku": "2039",
+        "name": "Oliver king size mattress",
+        "slug": "oliver-king-size-mattress",
+        "description": "Wherever you require firm or soft support, the mattress' comfort zones and pocket springs that move separately can deliver it.\r\n\r\nThe mattress' five comfort zones provide very specific support and alleviate pressure on your shoulders and hips.\r\n\r\nIf you have a tendency to move a lot while sleeping, individually wrapped pocket springs will isolate movements so you won't wake up your companion.",
+        "price": "290.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.90",
+        "image_url": null,
+        "image": "bed-4_U8avWhk.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "category": 11,
+        "sku": "2040",
+        "name": "Oliver Dein leather headboard",
+        "slug": "oliver-dein-leather-headboard",
+        "description": "The headboard is simply attached to the extendable bed frame. The headboard is easily mounted to SLÄKT extendable bed frame.\r\n\r\n\r\nTimeless design with soft rounded corners and a scratch-resistant surface mean that the bed will last for many years.\r\n\r\nThe bed's timeless design, rounded corners, and scratch-resistant surface ensure its longevity.",
+        "price": "120.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.90",
+        "image_url": null,
+        "image": "bed-1_VeMJDHm.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "category": 11,
+        "sku": "2042",
+        "name": "Oliver Dein headboard",
+        "slug": "oliver-dein-headboard",
+        "description": "The headboard is simply attached to the extendable bed frame. The headboard is easily mounted to Oliver Dein headboard extendable bed frame.\r\n\r\n\r\nTimeless design with soft rounded corners and a scratch-resistant surface mean that the bed will last for many years.\r\n\r\nThe bed's timeless design, rounded corners, and scratch-resistant surface ensure its longevity.",
+        "price": "120.00",
+        "discount_price": "99.00",
+        "has_sizes": true,
+        "rating": "4.20",
+        "image_url": null,
+        "image": "bed-2_u5bJF1v.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "category": 11,
+        "sku": "2043",
+        "name": "Oliver Dein lazy headboard",
+        "slug": "oliver-dein-lazy-headboard",
+        "description": "The headboard is simply attached to the extendable bed frame. The headboard is easily mounted to oliver-dein-lazy-headboard extendable bed frame.\r\n\r\n\r\nTimeless design with soft rounded corners and a scratch-resistant surface mean that the bed will last for many years.\r\n\r\nThe bed's timeless design, rounded corners, and scratch-resistant surface ensure its longevity.",
+        "price": "89.00",
+        "discount_price": null,
+        "has_sizes": true,
+        "rating": "4.60",
+        "image_url": null,
+        "image": "bed-3_83ZkwRc.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "category": 11,
+        "sku": "2044",
+        "name": "Otobi headboard",
+        "slug": "otobi-headboard",
+        "description": "The headboard is simply attached to the extendable bed frame. The headboard is easily mounted to Oliver Dein headboard extendable bed frame. Timeless design with soft rounded corners and a scratch-resistant surface mean that the bed will last for many years. The bed's timeless design, rounded corners, and scratch-resistant surface ensure its longevity.",
+        "price": "89.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.10",
+        "image_url": null,
+        "image": "bed-4_DP2aHrh.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "category": 13,
+        "sku": "2044",
+        "name": "Methon Kitchen Cabinet",
+        "slug": "methon-kitchen-cabinet",
+        "description": "The cabinet is prepared to be fitted with the appliances of your choosing; however, the sink, tap, and water trap are offered separately.\r\n\r\nSince this set contains both shelf and drawer space, you can store anything from cutlery to pots and pans.\r\n\r\nTo construct your kitchen solution, combine as many or as few Methon modules as you wish.\r\n\r\nMaking your kitchen more useful and enabling an effective workflow requires the addition of internal organizers, trash management, and lighting.",
+        "price": "820.00",
+        "discount_price": "700.00",
+        "has_sizes": false,
+        "rating": "4.80",
+        "image_url": null,
+        "image": "kitchen-cabinet-1.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+        "category": 13,
+        "sku": "4045",
+        "name": "Oliver lazy cabinet full set",
+        "slug": "oliver-lazy-cabinet-full-set",
+        "description": "The cabinet is prepared to be fitted with the appliances of your choosing; however, the sink, tap, and water trap are offered separately. Since this set contains both shelf and drawer space, you can store anything from cutlery to pots and pans. To construct your kitchen solution, combine as many or as few Methon modules as you wish. Making your kitchen more useful and enabling an effective workflow requires the addition of internal organizers, trash management, and lighting.",
+        "price": "220.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.20",
+        "image_url": null,
+        "image": "kitchen-cabinet-2.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+        "category": 13,
+        "sku": "4046",
+        "name": "Otobi Modern ktichen cabinet",
+        "slug": "otobi-modern-ktichen-cabinet",
+        "description": "The cabinet is prepared to be fitted with the appliances of your choosing; however, the sink, tap, and water trap are offered separately. Since this set contains both shelf and drawer space, you can store anything from cutlery to pots and pans. To construct your kitchen solution, combine as many or as few Methon modules as you wish. Making your kitchen more useful and enabling an effective workflow requires the addition of internal organizers, trash management, and lighting.",
+        "price": "299.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.20",
+        "image_url": null,
+        "image": "kitchen-cabinet-4.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+        "category": 13,
+        "sku": "4046",
+        "name": "Otobi kitchen cabinet",
+        "slug": "otobi-kitchen-cabinet",
+        "description": "The cabinet is prepared to be fitted with the appliances of your choosing. Since this set contains both shelf and drawer space, you can store anything from cutlery to pots and pans. To construct your kitchen solution, combine as many or as few Methon modules as you wish. Making your kitchen more useful and enabling an effective workflow requires the addition of internal organizers, trash management, and lighting.",
+        "price": "160.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.30",
+        "image_url": null,
+        "image": "kitchen-cabinet-3.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+        "category": 14,
+        "sku": "4047",
+        "name": "Oliver Dein Washing Machine",
+        "slug": "oliver-dein-washing-machine",
+        "description": "In order to wash as efficiently and cheaply as possible, the washing machine senses the volume of clothes in the drum and modifies the water volume and washing time.\r\n\r\nThe steam function refreshes your laundry and eliminates wrinkles and creases swiftly and softly.\r\n\r\nA unique design of the drum enables the clothing to be cleaned with greater care while better maintaining their shapes.\r\n\r\nYou can wash whenever it's convenient for you or when electricity prices are lower with the delayed start option, which can last up to 20 hours.",
+        "price": "399.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.40",
+        "image_url": null,
+        "image": "appliance-1_qX4hSHE.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+        "category": 14,
+        "sku": "4048",
+        "name": "Oliver Dein Lazy toaster",
+        "slug": "oliver-dein-lazy-toaster",
+        "description": "Oliver Dein Lazy toasterr's major features are simplicity, a timeless design, and outstanding performance. A classic Russell Hobbs design, the 2-Slice Futura Toaster will look well in either modern or contemporary kitchens. Your kitchen will look great with its timeless, eye-catching brushed and polished stainless steel appearance.",
+        "price": "60.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.80",
+        "image_url": null,
+        "image": "appliance-2.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+        "category": 14,
+        "sku": "4050",
+        "name": "Otobi oven with hob",
+        "slug": "otobi-oven-with-hob",
+        "description": "You may bake or cook multiple foods at once without their flavors blending together because to the fast and equal heat distribution provided by fan-forced air convection.\r\n\r\nThere is plenty of space for the food you wish to prepare thanks to the extra-large interior dimensions and the five cooking stages.\r\n\r\nFor foods that have a crispy exterior and for slowly cooking casseroles, top and bottom heating is ideal.",
+        "price": "399.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.10",
+        "image_url": null,
+        "image": "appliance-3.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+        "category": 14,
+        "sku": "2051",
+        "name": "Otobi Dishwasher",
+        "slug": "otobi-dishwasher",
+        "description": "Comparing a dishwasher to hand washing, which typically uses five times as much water, a dishwasher saves both water and electricity. If your filthy dishes are still sparkling clean after going through the dishwasher? Of course!\r\n\r\nThere is a feature in the dishwasher that measures how unclean the dishes are and modifies the water flow accordingly.",
+        "price": "209.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "3.50",
+        "image_url": null,
+        "image": "appliance-4.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+        "category": 15,
+        "sku": "2055",
+        "name": "Otobi Lazy tap",
+        "slug": "otobi-lazy-tap",
+        "description": "The mixer tap insert has hard, durable ceramic discs that can handle the high friction that occurs when you change the temperature of the water.\r\n\r\nThe tap functions two ways, so you can switch between a concentrated stream and a shower function.",
+        "price": "99.00",
+        "discount_price": "69.00",
+        "has_sizes": false,
+        "rating": "3.30",
+        "image_url": null,
+        "image": "taps-1.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+        "category": 15,
+        "sku": "2059",
+        "name": "Oliver Dein sink with tap",
+        "slug": "oliver-dein-sink-with-tap",
+        "description": "An aerator integrated in the tap keeps the water flow just right while less water and energy is used.\r\n\r\nThe high spout makes it easier to wash dishes, including large pots.\r\n\r\nThe mixer tap insert has hard, durable ceramic discs that can handle the high friction that occurs when you change the temperature of the water.",
+        "price": "190.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.50",
+        "image_url": null,
+        "image": "taps-2.jpg",
+        "featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+        "category": 15,
+        "sku": "2065",
+        "name": "Otobi modern tap",
+        "slug": "otobi-modern-tap",
+        "description": "The mixer tap insert has hard, durable ceramic discs that can handle the high friction that occurs when you change the temperature of the water. The tap functions two ways, so you can switch between a concentrated stream and a shower function.",
+        "price": "89.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.30",
+        "image_url": null,
+        "image": "taps-3.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+        "category": 15,
+        "sku": "2067",
+        "name": "Oliver Dein shower tap",
+        "slug": "oliver-dein-shower-tap",
+        "description": "The mixer tap insert has hard, durable ceramic discs that can handle the high friction that occurs when you change the temperature of the water. The tap functions two ways, so you can switch between a concentrated stream and a shower function.",
+        "price": "109.00",
+        "discount_price": null,
+        "has_sizes": false,
+        "rating": "4.80",
+        "image_url": null,
+        "image": "taps-4.jpg",
+        "featured": false
+    }
+},
+{
+    "model": "products.comment",
+    "pk": 1,
+    "fields": {
+        "product": 25,
+        "name": "Shahid Islam",
+        "body": "I bought this one last year. The quality of the bed is amazing. 100% recommended",
+        "created_on": "2023-01-10T23:38:47.741Z",
+        "approved": true
+    }
+}
+]
