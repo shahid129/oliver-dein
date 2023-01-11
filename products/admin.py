@@ -5,7 +5,7 @@ from .models import Product, Category, Comment
 # Register your models here.
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name','category', 'price', 'rating']
+    list_display = ['name', 'category', 'price', 'rating', 'featured']
     prepopulated_fields = {'slug': ('name',)}
     list_editable = ['price', 'category']
 
