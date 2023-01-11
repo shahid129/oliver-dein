@@ -8,8 +8,8 @@
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Dining Tables">Dining Tables</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Couch">Couch</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Bed">Bed</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Dining Tables,Couch,Bed">All Furniture</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Chair">Chair</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Dining Tables,Couch,Chair">All Furniture</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
@@ -33,7 +33,7 @@
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Beds">Beds</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Mattresses">Mattresses</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Headboards">Headboards</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Bed,Mattresses,Headboards">All Bed & Mattresses</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Beds,Mattresses,Headboards">All Bed & Mattresses</a></li>
 
             </ul>
         </li>
@@ -44,7 +44,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Cabinets"> Cabinets</a></li>
-                <li><a class="dropdown-item" href="Appliances">Appliances</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Appliances">Appliances</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Taps and Sinks">Taps and Sinks</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Cabinets,Appliances,Taps and Sinks,">All Kitchen Products</a></li>
             </ul>
