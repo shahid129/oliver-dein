@@ -70,7 +70,8 @@ ROOT_URLCONF = 'oliver_dein.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-# CSRF_TRUSTED_ORIGINS = ['https://*.mydomain.com', 'https://*.8000-shahid129-oliverdein-u73z2t1mzzl.ws-eu81.gitpod.io/']
+CSRF_TRUSTED_ORIGINS = ['https://*.mydomain.com', 'https://*.8000-shahid129-oliverdein-u73z2t1mzzl.ws-eu82.gitpod.io/']
+# https://*.8000-shahid129-oliverdein-u73z2t1mzzl.ws-eu81.gitpod.io/
 
 TEMPLATES = [
     {

@@ -251,7 +251,7 @@
         "has_sizes": false,
         "rating": "4.40",
         "image_url": null,
-        "image": "couch-4_1RApq7A.jpg",
+        "image": "couch-4.jpg",
         "featured": true
     }
 },
@@ -629,7 +629,7 @@
         "has_sizes": true,
         "rating": "4.40",
         "image_url": null,
-        "image": "bed-1_MEiWyA4.jpg",
+        "image": "bed-1.jpg",
         "featured": true
     }
 },
@@ -647,7 +647,7 @@
         "has_sizes": true,
         "rating": "3.00",
         "image_url": null,
-        "image": "bed-3_XQZNshM.jpg",
+        "image": "bed-3.jpg",
         "featured": false
     }
 },
@@ -665,7 +665,7 @@
         "has_sizes": true,
         "rating": "4.30",
         "image_url": null,
-        "image": "bed-2_uWoi8bf.jpg",
+        "image": "bed-2.jpg",
         "featured": true
     }
 },
@@ -683,7 +683,7 @@
         "has_sizes": false,
         "rating": "3.90",
         "image_url": null,
-        "image": "bed-4_U8avWhk.jpg",
+        "image": "bed-4.jpg",
         "featured": false
     }
 },
@@ -701,7 +701,7 @@
         "has_sizes": false,
         "rating": "3.90",
         "image_url": null,
-        "image": "bed-1_VeMJDHm.jpg",
+        "image": "bed-1.jpg",
         "featured": true
     }
 },
@@ -719,7 +719,7 @@
         "has_sizes": true,
         "rating": "4.20",
         "image_url": null,
-        "image": "bed-2_u5bJF1v.jpg",
+        "image": "bed-2.jpg",
         "featured": false
     }
 },
@@ -737,7 +737,7 @@
         "has_sizes": true,
         "rating": "4.60",
         "image_url": null,
-        "image": "bed-3_83ZkwRc.jpg",
+        "image": "bed-3.jpg",
         "featured": false
     }
 },
@@ -755,7 +755,7 @@
         "has_sizes": false,
         "rating": "4.10",
         "image_url": null,
-        "image": "bed-4_DP2aHrh.jpg",
+        "image": "bed-4.jpg",
         "featured": false
     }
 },
@@ -845,7 +845,7 @@
         "has_sizes": false,
         "rating": "4.40",
         "image_url": null,
-        "image": "appliance-1_qX4hSHE.jpg",
+        "image": "appliance-1.jpg",
         "featured": true
     }
 },
