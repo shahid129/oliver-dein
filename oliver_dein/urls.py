@@ -33,3 +33,4 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'oliver_dein.views.handler404'
+handler404 = 'oliver_dein.views.handler500'
