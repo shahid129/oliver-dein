@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://oliver-dein.herokuapp.com/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/bag/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Dining%20Tables</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Couch</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Chair</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Dining%20Tables,Couch,Chair</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Toy%20Storage</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Children%20Wardrobe</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Cots</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Toy%20Storage,Children%20Wardrobe,Cots</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Beds</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Mattresses</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Headboards</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Beds,Mattresses,Headboards</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Cabinets</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Appliances</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Taps%20and%20Sinks</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/?category=Cabinets,Appliances,Taps%20and%20Sinks,</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-modern-style-seater/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-sink-with-tap/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-washing-machine/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-leather-headboard/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-special-edition-mattress/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-oven-with-hob/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/methon-kitchen-cabinet/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-divan-bed-double/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-shower-tap/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-modern-tap/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-lazy-tap/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-dishwasher/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-lazy-toaster/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/contact/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/faqs/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-dining-table/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/modern-otobi-dining-table/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/dining-table-with-glass-top/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-long-dining-table/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/luxury-oliver-dein-couch/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-luxuy-leather-couch/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/luxury-corner-seater/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/wing-chair/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-chair/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-garden-chair/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-chair-red/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/toy-storage-cabinet/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/teddy-storage/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-toy-storage/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/fun-size-toy-storage/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/fun-size-wardrobe/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-bedside-wardrobe/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oilver-dein-wardrobe/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/fun-size-full-set-wardrobe/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-cot/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/fun-size-baby-cot/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-moses-basket/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-moses-basket/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-divan-bed/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-modern-oak-wood-modern-bed/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/funsize-double-bed/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-king-size-mattress/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-lazy-mattress/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-wakey-mattress/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-headboard/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-dein-lazy-headboard/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-headboard/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/oliver-lazy-cabinet-full-set/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-modern-ktichen-cabinet/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://oliver-dein.herokuapp.com/products/product/otobi-kitchen-cabinet/</loc>
+  <lastmod>2023-01-13T19:45:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

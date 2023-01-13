@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: https://oliver-dein.herokuapp.com/sitemap.xml
