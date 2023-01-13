@@ -8,6 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Oliver dein, online shopping, free delivery, furniture, nursery, kids kitchen, dining table, 
+        couch, chair, furniture, nursery, toy storage, children wardrobe, cots mattress, headboards, beds,
+        kitchen, cabinet, appliances, taps and sinks">
+    <meta name="description" content="Oliver Dein online shopping, free deliveries, all kinds of households
+        including furnitures, kids toys storage cots, beds and mattress, kitchen appliances taps and sinks top quality furniture">
     {% endblock %}
 
     {% block extra_meta %}
@@ -53,7 +58,7 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-none d-sm-flex" href="{% url 'home' %}">
-                    <img class="brand-logo"  src="{% static 'oliver-dein-logo.png' %}" alt="">
+                    <img class="brand-logo"  src="{% static 'oliver-dein-logo.png' %}" alt="Oliver dein logo">
                 </a>
                 {% include 'includes/mobile-header-top.html' %}
 
@@ -68,7 +73,7 @@
         </nav>
         <div>
             <div id="delivery-banner" class="row text-center">
-                <h4 class="m-0">Free Delivery on orders over ${{ free_delivery_threshold }}</h4>
+                <h4 class="m-0"><strong>Free Delivery</strong> on orders over ${{ free_delivery_threshold }}</h4>
             </div>
         </div>
     </header>
