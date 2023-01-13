@@ -31,10 +31,10 @@
                     <div class="card h-100 product">
                         <!-- Product image-->
                         {% if product.image %}
-                            <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{product.name}}" />
+                            <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}" />
                         {% else %}
                         <a href="">
-                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}shahid.png" alt="..." />
+                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}shahid.png" alt="{{ product.name }}" />
                         </a>
                         {% endif %}
 
@@ -94,10 +94,10 @@
                     <div class="card h-100 product">
                         <!-- Product image-->
                         {% if product.image %}
-                            <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{product.name}}" />
+                            <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}" />
                         {% else %}
                         <a href="">
-                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}shahid.png" alt="..." />
+                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}shahid.png" alt="{{ product.name }}" />
                         </a>
                         {% endif %}
 
@@ -154,7 +154,7 @@
                 <div class="carousel-inner">
                 {% for comment in comments %}
                     <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}" data-interval="100" data-bs-interval="2000">
-                        <p><img src="{{ comment.product.image.url }}" width="200px"></p>
+                        <p><img src="{{ comment.product.image.url }}" width="200px" alt="{{ comment.product.name }}"></p>
                         <P>Reviewed by {{ comment.name }}</P>
                         <P> Product name: {{ comment.product.name }}</P>
                         <p class="overflow-auto comment-body">{{ comment.body }}</p>
