@@ -290,6 +290,17 @@ li.nav-item {
     max-height: 200px;
 }
 
+/* -------------------------Subscribe form */
+
+#mc_embed_signup .button .foot{
+    /* border: 1px solid #ABB0B2; */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 33px;
+    padding: 40px;
+}
+
+
 /* ------------------------ Media Queries */
 
 
