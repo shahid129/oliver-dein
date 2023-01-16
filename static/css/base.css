@@ -178,13 +178,22 @@ li.nav-item {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.hero-text {
+.hero-button {
     width: inherit;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     
+    color: white;
+}
+
+.hero-text {
+    width: 90%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
@@ -326,6 +335,12 @@ li.nav-item {
         display: flex;
     }
 }
+
+/* @media (max-width: 400px) {
+    .hero-text {
+        bottom: 3%;
+    }
+} */
 
 
 
