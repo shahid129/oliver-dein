@@ -7,7 +7,6 @@ This example project was not created to simulate actual credit card transactions
 [View Live Project Here](https://oliver-dein.herokuapp.com/)
 
 ## TABLE OF CONTENTS
-- [Introduction](#introduction)
 - [Business Strategy](#business-strategy)
     - [Site Goals](#site-goals)
     - [Web Marketing](#web-marketing)
@@ -51,4 +50,19 @@ This example project was not created to simulate actual credit card transactions
     - [Others](#others)
 - [Acknowledgement](#acknowledgement)
 
-## Introduction
+## Site Goals
+- Site owners aim
+    - Site owners can easily sell their products.
+    - Site owners add or update their products.
+    - Site owners can promote their products in sale or fetured products category.
+-  Site Users Goals:
+    - Can easily find the products.
+    - Get a decent user experience.
+    - Can purchase proudcts easily.
+
+
+## Web Marketing
+The use of social media marketing is probably essential for drawing customers and increasing visibility. The best way to generate interest is probably through an organic approach as the marketing budget will probably be little at first.
+
+Marketing on social media platforms other than Facebook, such as Instagram, Pinterest, and YouTube, is advantageous. Because Facebook marketing is more important than any other platform, I will use it for the purposes of this project. 
+The live face book page can be found [here](https://www.facebook.com/profile.php?id=100089334735487). If the site is no longer available an image can be found [here](docs/screenshot/FB_page_1.png) and [here](docs/screenshot/FB_page_2.png).
