@@ -27,13 +27,16 @@ This example project was not created to simulate actual credit card transactions
         - [footer](#footer)
         - [Home Page](#home-page)
         - [Products Page](#products-page)
-        - [Product Details Page](#product-details)
+        - [Product Details Page](#product-details-page)
         - [Bag Page](#bag-page)
         - [Checkout Page](#checkout-page)
         - [Checkout Success Page](#checkout-success-page)
         - [Profile Page](#profile-page)
         - [FAQS Page](#faqs-page)
+        - [Contact Page](#contact-page)
         - [Search Page](#search-page)
+        - [Error 404 Page](#error-404-page)
+        - [Forgot Password](#forgot-password)
     - [Future Features](#future-features)
 - [Testing](#testing)
 
@@ -283,4 +286,88 @@ The home page is divided into different sections.
 
 - Review of the product is displayed if there is a review available on that product.
 
-![](docs/screenshot/features/product-detail.png)
+    ![](docs/screenshot/features/product-detail.png)
+
+### Bag Page
+
+- The bag page provides a summary of the items in the basket and their total prices.
+- It calculates prices of items automatically if an item is on sale.
+- The user may easily make their final purchasing decisions because they have the opportunity to update or remove goods from the basket.
+- If the user wants to delete an item from the basket, they are asked if they really want to delete the item from the basket. This is to ensure that removing an item from the bag was not done mistakenly.
+
+    ![](docs/screenshot/features/shopping-bag.png)
+
+### Checkout Page
+- It is possible to purchase from the store as a guest or registered user.
+- Only registered users can save their info for future purchase.
+- The checkout page is simple which makes it easier for a user to make purchase.
+- It also shows the summery of the products so that the user knows what they are purchasing before making the payment.
+- The page gives the buyer an option to create an account if they wish to save their details for future
+
+    ![](docs/screenshot/features/checkout.png)
+
+### Checkout Success Page
+- Once the order has been processed, a checkout success page is loaded to let the customer know whether or not their purchase was successful.
+
+- An email of the order confirmation is also sent to the user.
+
+    ![](docs/screenshot/features/checkout-success.png)
+
+
+### Profile Page
+
+- A registered user can easily access their order history and modify their default shipping information on their profile page.
+
+- User can also update their information
+
+    ![](docs/screenshot/features/profile.png)
+
+### FAQS Page
+- The FAQ page displays FAQs so that the user can easily find an answer.
+- Through the  FAQ page, the store owner can quickly add a question and its answer, and it will be shown for site visitors straight immediately.
+- Store owners can edit, update and delete a faqs if the wish to.
+
+    ![](docs/screenshot/features/faqs.png)
+
+### Contact Page
+- The Contact page displays the virtual address of the store and its location on the map.
+
+- It also gives users the option to send a quick message about their queries.
+- The admin can view the message in the admin panel. 
+- At the minute the admin does not have option to reply back to the message but that can be added in the future feature
+
+    ![](docs/screenshot/features/contact-us.png)
+
+### Search Page
+
+- The search page searches for the products and displays on the page.
+- It also displays the total number of matches that were found in the search results
+
+    ![](docs/screenshot/features/search.png)
+
+### Error 404 Page
+
+- A  custom 404 error page that gives the user a polite message.
+- It also gives the user to head back to the home page with a link.
+
+    ![](docs/screenshot/features/error-404.png)
+
+### Forgot Password
+
+- If a user has forgotten their password they will be asked to enter their email, and oliverdein.ie will send them an email with a link to reset their password.
+- User will be asked to enter their password twice for confirmation.
+
+- password reset form
+
+    ![](docs/screenshot/features/forgot-password.png)
+
+- email received to reset password
+
+    ![](docs/screenshot/features/forgot-password-2.png)
+
+## Future Features
+- Site owner or admin can respond to a message
+- Added inventory count and displays out of stock if the item is not available.
+- A dedicated order tracking page with orders potentially linked to multiple shipping models allows site visitors to monitor the creation, processing, and shipment of orders.
+- A 'Favorite' button where Customers can save it to their favorites and use it later. 
+- Implement Social login where users can log in using social media login, such facebook, instagram, google.
