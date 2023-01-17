@@ -424,3 +424,8 @@ Type | card No | Expiry | CVC | ZIP
 --- | --- | --- | --- | ---
 Success | **4242 4242 4242 4242** | A date in the future | Any 3 digits| Any 3 digits
 Require authorisation | **4000 0027 6000 3184** | A date in the future | Any 3 digits| Any 5 digits
+
+
+## Deployment
+
+The project has been deployed to Heroku. Detail of the steps taken to deploy the project can be found [here](DEPLOYMENT.md)
