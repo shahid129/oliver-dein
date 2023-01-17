@@ -429,3 +429,37 @@ Require authorisation | **4000 0027 6000 3184** | A date in the future | Any 3 d
 ## Deployment
 
 The project has been deployed to Heroku. Detail of the steps taken to deploy the project can be found [here](DEPLOYMENT.md)
+
+# Credits
+
+## Code
+- The Code Institute **Boutique Ado** walkthrough project provided a lot of the site's original functionality, which was then modified and expanded as needed.
+- The code institute  **I Think Therefore I Blog** walkthrough were also consulted whenever needed.
+
+## Media
+
+- The images for this project was taken from [Unsplash](https://unsplash.com/)
+
+- The Favicon for this project was made from [Favicon](https://favicon.io/favicon-generator/)
+
+- The Icon for this project was taken from [Font Awesome](https://fontawesome.com/)
+
+- The Font for this project was taken from [Google Fonts](https://fonts.google.com/)
+
+- Image was compressed by [compressor](https://compressor.io/)
+
+
+## Others
+- To better understand the code and a lot of help was taken from
+
+    - [Django documents](https://docs.djangoproject.com/en/4.1/)
+    - [Stack Overflow](https://stackoverflow.com/)
+    - [GeeksforGeeks](https://www.geeksforgeeks.org/)
+    - [Medium](https://medium.com/all-about-django)
+
+# Acknowledgement
+
+I want to express my gratitude to my tutor Kasia, and my mentor Ronan, for their continual support and advice. The Jan-2022-lwetb slack group and all of the other slackers in the code institute
+
+Thank You
+I want to especially thank my mentor Ronan for all of his crucial advice and assistance throughout the course of this project's development. I want to express my gratitude to my wife in particular for providing me infinite time to finish the projects and the course.
