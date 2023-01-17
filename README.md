@@ -129,3 +129,59 @@ The epics were created using the milistones on github. Each epic was created and
     - I can view the messages from contact us form in the admin panel
     
 
+## Design
+The website is created to draw users' attention and be easy to use, making it possible for an user to browse and buy things of interest quickly. In order to plan the site's layout, wireframes for desktop, tablet, and mobile views were made and only few colors were used to maintain consistency of the website.
+
+- ## Wireframes
+wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
+
+- Home Page 
+
+    ![](docs/wireframes/wireframe-home.png)
+
+- Product Page
+
+    Product page displays all the products available in the store.
+![](docs/wireframes/wireframe-all-products.png)
+
+- Product Details Page
+
+    Displays the details of the product. Users can add products to their bag. They can also +/- the amount of products and update the bag from here
+![](docs/wireframes/wireframe-product-detail.png)
+
+- Register Page
+
+    Users can register on this page, If they are already registered, the page gives them a link to the sign in page
+    ![](docs/wireframes/wireframe-register.png)
+
+- Sign In
+
+    Users can sign in on this page, If they are not registered, the page gives them a link to the register page/
+    ![](docs/wireframes/wireframe-signin.png)
+
+- Shopping Bag
+
+    Users can add items to their shopping bag. This page gives them to +/- their products as well as to delete them.
+    ![](docs/wireframes/wireframe-bag.png)
+
+- Checkout Page
+
+    Users can enter their shipping and bank details to make a purchase. To save their details for future use, they need to create and account
+    ![](docs/wireframes/wireframe-checkout.png)
+
+- Checkout Success Page
+
+    Once the checkout is complete, the user is redirected to checkout success page, where they can see their order details and shipping details.
+    ![](docs/wireframes/wireframe-checkout-success.png)
+
+- Contact Page
+
+    Users can view company details and they can fill up the form contact us.
+    ![](docs/wireframes/wireframe-contact.png)
+
+- Faqs Page
+
+    Users can find frequently asked questions
+    ![](docs/wireframes/faqs.png)
+
+
