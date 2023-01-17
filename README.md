@@ -1,5 +1,5 @@
 # Oliver Dein
-![Main Page](docs/screenshot/site-main-page.png)
+![Main Page](docs/screenshot/others/site-main-page.png)
 
 Oliver Dein is an internet store where customers may purchase any kind of household goods. The website utilises Stripe as the payment processor.
 This example project was not created to simulate actual credit card transactions. Use the test card number 4242 4242 4242 4242 with any future expiration date, any three-digit CVC, and any five-digit zip code to test the functionality.
@@ -25,7 +25,7 @@ This example project was not created to simulate actual credit card transactions
     - [Existing Features](#existing-features)
         - [Navigation](#navigation)
         - [footer](#footer)
-        - [Introduction](#introduction)
+        - [Home Page](#home-page)
         - [Products Page](#products-page)
         - [Product Details Page](#product-details)
         - [Bag Page](#bag-page)
@@ -73,7 +73,7 @@ The meta keywords and description in the site's base.html have been updated to r
 
 The homepage has also been designed with SEO in mind. Some of the keywords are also used in the text portions of the webpage, with strong tags surrounding the significant ones. For SEO purposes, a sitemap.xml and robots.txt file have also been added.
 
-![](docs/screenshot/SEO-keywords.png)
+![](docs/screenshot/others/SEO-keywords.png)
 
 
 # Planning
@@ -81,7 +81,7 @@ The homepage has also been designed with SEO in mind. Some of the keywords are a
 The plan for this project was carried out using the Agile Methodology in Github. User Stories were created using the issues on the git hub. Each user story explicitly explains the purpose of the issues. Each user story is segmented into acceptance criteria and tasks. It was prioritised using GitHub labels with different colors. Once the issues are created they are moved to the User Stories kanban board. The Kanban board has three main columns, To Do, In Progress and Done. Once you start working with the user story, you move it to the To Do column and when finished move it to the Done column. Following this pattern of work gives you a full-on idea about the progress of the project.
 
 
-The epics were created using the milistones on github. Each epic was created and related issues were added to it. A time frame was added to make sure the tasks were done on time.
+The epics were created using the milestones on github. Each epic was created and related issues were added to it. A time frame was added to make sure the tasks were done on time.
 
 - ### As a site user
     - I can rapidly understand what the website is offering so that I can determine whether it satisfies my needs.
@@ -184,4 +184,103 @@ wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
     Users can find frequently asked questions
     ![](docs/wireframes/faqs.png)
 
+- ## Color Schema
 
+The color palette for this project was kept as simple as possible in order to maintain the contrast between the background and the foreground.
+
+![](docs/screenshot/others/colors.png)
+
+- ## Model Schema
+
+Two relational databases were used to create the site. The built in Django SQLite database was used for development and then Postgres for the deployed version. The site is based around a number of models separated into the following main groups.
+
+**Product Models**
+
+**Category** - stores the details of a product category.
+
+- **Product** - stores all the details about a product for sale. Connected to the featured product, recently added products and Category objects via foreign key relationships.
+
+- **Review / Comments** - stores a user review of a product and is connected to the Product and by foreign key relationships.
+
+**User Models**
+
+- **User** - the Django Allauth user model containing information such as username and password.
+
+- **Profile** - stores a users default delivery information and is connected to the User via a one to one relationship.
+
+**Order Models**
+- **Order** - a foreign key relationship connects the user profile to the storage of the complete order data.
+
+- **OrderLineItem** - stores the product information for a single product purchased on an order. Foreign key relationships connect the product and order.
+
+Two additional models providing general information for the site user or store owner have also been used.
+
+- **Contact** - stores a site user message submitted through the contact form.
+- **FAQ** - stores FAQ questions and answers that the store owner has added to the site.
+
+    ![](docs/screenshot/models_database/database-model-1.png)
+
+    ![](docs/screenshot/models_database/database-model-2.png)
+
+    ![](docs/screenshot/models_database/database-model-3.png)
+
+    ![](docs/screenshot/models_database/database-model-4.png)
+
+
+# Features
+### Existing Features
+
+### Navigation
+- The navigation bar, which can be found on all pages, enables users to quickly access the site's key pages without having to use their browser's navigation buttons.
+- The navbar uses a hamburger menu toggle on smaller displays and is fully responsive.
+- The user is immediately informed whether they are logged in or not by the My Account dropdown's several options, which vary depending on the user status. It also has additional choices that are solely available to store owners.
+- only logged in users can access the profile or logout pages.
+- only not logged in users can access login and register page
+- The menu collapses to a toggler on smaller screens whilst leaving the account, search and basket and burger menu links in the navbar allowing for easy navigation across all devices.
+- Navigation on large screen
+    ![](docs/screenshot/features/navigation.png)
+
+- Navigation on smaller screen
+    ![](docs/screenshot/features/navigation-mobile.png)
+
+### Footer
+- Links to the store's social media pages are provided in the footer, providing more methods to interact with the store. The footer is available on all pages of the website.
+- The footer also provides navigation to all the important parts of the site including the Contact, FAQ page and privacy.
+![](docs/screenshot/features/footer.png)
+
+### Home Page
+The home page is divided into different sections.
+
+- A hero image with a link to the all products page and some text content to boost SEO 
+![](docs/screenshot/features/hero-image.png)
+
+- The Featured Products section displays the most recently added eight featured products. Only the admin has access to select which products will be added as featured products.
+![](docs/screenshot/features/featured-products.png)
+
+- The Recently Added Products section displays the most recently added eight products. 
+![](docs/screenshot/features/recently-added-products.png)
+
+- This section displays bootstrap carosel reviews. It shows the product image, followed by who reviewed it and the review description.
+![](docs/screenshot/features/review.png)
+
+### Products Page
+- The all products page displays all the products available on the website. The user has the option to sort the products into different categories. Once they click on the product, it brings them to the product details page.
+
+- A sale tag is added automatically if product is on sale along with the original price
+
+- It also shows the reviews on each product which helps the user to understand the quality of the products they are looking at.
+
+- Additional Edit, Delete and Update options are displayed on this page when the superuser is logged in.
+![](docs/screenshot/features/all-products.png)
+
+### Product Details Page
+
+- The product detail page provides additional information about the products
+
+- The user can choose the quantity of the product they wish to purchase
+
+- A review form is displayed in the review section for registered users to leave a review.
+
+- Review of the product is displayed if there is a review available on that product.
+
+![](docs/screenshot/features/product-detail.png)
