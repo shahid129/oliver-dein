@@ -4,10 +4,6 @@ body {
 }
 
 
-h1 {
-    color: red;
-}
-
 /* --------------- Navigation -------------- */
 
 .container-fluid {
@@ -25,6 +21,30 @@ li.nav-item {
 
 .brand-logo {
     width: 160px;
+}
+
+/* customise bootstrap nav */
+.navbar 
+.nav-item 
+.dropdown-menu { 
+    display: none; 
+}
+
+.navbar 
+.nav-item:hover 
+.dropdown-menu { 
+    display: block; 
+}
+
+.navbar 
+.nav-item 
+.dropdown-menu {
+    margin-top:0; 
+    left: 0; 
+}
+
+.dropdown-menu {
+    border: none;
 }
 
 /* --------------- footer */
@@ -347,4 +367,5 @@ li.nav-item {
 .quantity-form {
     width: 60%;
 }
+
 
