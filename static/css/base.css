@@ -71,6 +71,11 @@ li.nav-item {
     transition: ease-in-out all .3s; 
 }
 
+.shopping-cart-total {
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
 .nav-item li a:hover {
     color: #F99F38;
     background-color: white;
@@ -81,7 +86,21 @@ li.nav-item {
 }
 
 .search-bar {
-    width: 100px;
+    width: 0%;
+    display: none;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.d-lg-flex {
+    width: 100%;
+}
+
+.d-lg-flex {
+    display: flex!important;
+    justify-content: flex-end;
 }
 
 .dropdown-menu.show {

@@ -71,20 +71,30 @@
             <a class="{% if grand_total %}text-info font-weighht-bold {% else %}text-black {% endif %} nav-link"
                 href="{% url 'bag' %}">
                 <div class="shopping-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="my-0">
-                        {% if grand_total %}
-                        €{{ grand_total | floatformat:2 }}
-                        {% else %}
-                        €0.00
-                        {% endif %}
-                    </span>
+                    <i class="fas fa-shopping-cart"><span class="shopping-cart-total">{% if grand_total %}€{{ grand_total | floatformat:2 }}{% else %}€0.00{% endif %}</span>
+                    </i>
                 </div>
             </a>
         </li>
     </ul>
     <form class="d-flex d-none d-lg-flex" role="search" method="GET" action="{% url 'products' %}">
         <input class="form-control me-2 search-bar" type="search" name="q" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+        <button class="btn btn-outline-success search-button" type="submit"><i class="fas fa-search"></i></button>
     </form>
 </div>
+
+<script>
+$('.search-button').hover(function () {
+    $(".navbar-nav").hide(1000);
+    $(".search-bar").show().animate({ width: "100%" }, 'slow')
+})
+
+// this block of code is taken from 
+// https://stackoverflow.com/questions/1403615/use-jquery-to-hide-a-div-when-the-user-clicks-outside-of-it
+$(document).on('click', function (e) {
+    if ($(e.target).closest(".search-bar").length === 0) {
+        $(".search-bar").hide().css({'width': '0'},);
+        $(".navbar-nav").fadeIn(2000)
+    }
+});
+</script>
