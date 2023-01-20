@@ -32,7 +32,7 @@ def contact(request):
                 email_to
                 )
 
-            messages.success(request, 'Message submitted succesfully \
+            messages.success(request, 'Message submitted successfully \
                 A confirmation email is sent with original message')
 
     form = ContactForm
