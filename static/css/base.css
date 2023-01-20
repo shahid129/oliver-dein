@@ -366,6 +366,11 @@ li.nav-item {
     padding: 40px;
 }
 
+/* ------------------------ Privacy policy */
+
+.privacy-text{
+    text-align: justify;
+}
 
 /* ------------------------ Media Queries */
 
