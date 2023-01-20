@@ -62,6 +62,24 @@ li.nav-item {
     text-transform: uppercase;
 }
 
+#mc-embedded-subscribe {
+    background-color: white !important;
+    color: #F99F38 !important;
+    border-color: #F99F38 !important;
+    border-radius: 33px !important;
+    height: 40px !important;
+    border: .6px solid #F99F38 !important;
+}
+#mc-embedded-subscribe:hover {
+    background-color: #F99F38 !important;
+    color: white !important;
+    border-color: #F99F38 !important;
+}
+
+#mc_embed_signup .helper_text {
+    padding: 0 !important;
+}
+
 .home-icon:hover,
 .footer-menu a:hover,
 .mobile-menu:hover,
