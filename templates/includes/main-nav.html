@@ -1,5 +1,5 @@
 <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav me-auto mb-3 mb-lg-0">
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -74,6 +74,11 @@
                     <i class="fas fa-shopping-cart"><span class="shopping-cart-total">{% if grand_total %}€{{ grand_total | floatformat:2 }}{% else %}€0.00{% endif %}</span>
                     </i>
                 </div>
+            </a>
+        </li>
+        <li class="nav-item shop-all-width">
+            <a class="nav-link shop-all-nav" href="{% url 'products' %}" role="button">
+                ShopAll
             </a>
         </li>
     </ul>

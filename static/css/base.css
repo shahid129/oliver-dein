@@ -47,6 +47,19 @@ li.nav-item {
     border: none;
 }
 
+.shop-all-nav {
+    color: white !important;
+    background-color: #F99F38;
+    padding: 10px 16px;
+    border: .6px solid #F99F38;
+    border-radius: 33px;
+}
+
+.shop-all-nav:hover {
+    color: #F99F38 !important;
+    background-color: white;
+}
+
 /* --------------- footer */
 
 .footer-menu a{
@@ -423,13 +436,11 @@ li.nav-item {
     }
 }
 
-/* @media (max-width: 400px) {
-    .hero-text {
-        bottom: 3%;
+@media (max-width: 991px) {
+    .shop-all-width {
+        width: 120px;
     }
-} */
-
-
+}
 
 .quantity-form {
     width: 60%;
