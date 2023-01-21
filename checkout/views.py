@@ -79,7 +79,7 @@ def checkout(request):
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products wasn't found in our database. "
-                        "Please call us for assistnace"
+                        "Please call us for assistance"
                     ))
                     order.delete()
                     return redirect(reverse('bag'))
@@ -123,7 +123,7 @@ def checkout(request):
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
-            did you forget to seit it in your environment')
+            did you forget to set it in your environment')
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
