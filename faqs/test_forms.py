@@ -3,7 +3,13 @@ from .forms import FaqsForm
 
 
 class TestForm(TestCase):
+    """
+    Test for the form
+    """
     def test_all_item_is_required(self):
+        """
+        Check if all the field is required
+        """
         form = FaqsForm({
             'category': '',
             'questions': '',
