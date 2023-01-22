@@ -62,9 +62,24 @@ li.nav-item {
 
 /* --------------- footer */
 
+.footer-menu {
+    background-color: #F99F38;
+
+}
+
 .footer-menu a{
     font-size: small;
 }
+
+.footer-menu a:hover{
+    color: white;
+    transition: ease-in-out all .3s; 
+}
+
+.remove-footer-gutter {
+    --bs-gutter-x: 0px;
+}
+
 
 .footer-menu a,
 .nav-item a,
@@ -93,8 +108,19 @@ li.nav-item {
     padding: 0 !important;
 }
 
+
+#mc_embed_signup input {
+    border: 0.6px solid #ABB0B2 !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 33px !important;
+}
+
+.social-links {
+    padding: 12px 0px;
+}
+
 .home-icon:hover,
-.footer-menu a:hover,
 .mobile-menu:hover,
 .nav-item a:hover,
 .shopping-cart:hover{

@@ -1,70 +1,68 @@
 <!-- Footer -->
 <footer class="bg-light text-center">
-    <div class="container p-2">
-        <!-- Social media -->
-        <section class="mb-4">
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100089334735487" target="_blank"
-                rel="noopener"><i class="fab fa-facebook-f"></i></a>
-
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" target="_blank"
-                rel="noopener"><i class="fab fa-google"></i></a>
-
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"
-                rel="noopener"><i class="fab fa-instagram"></i></a>
-
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkdedin.com/" target="_blank"
-                rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-
-        </section>
-
-        <!-- Subscribe form -->
-
-        <div id="mc_embed_signup">
-            <form
-                action="https://herokuapp.us14.list-manage.com/subscribe/post?u=66b8fe36761222168c0ab5d8b&amp;id=335f29a91a&amp;f_id=009e97e0f0"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                target="_blank" novalidate>
-                <!-- <div class="row"> -->
-                    <div id="mc_embed_signup_scroll" class="row justify-content-center">
-                        <div class="col-sm-6">
-                            <div class="mc-field-group">
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address*" required>
-                                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+    <div class="row remove-footer-gutter">
+        <div class="col-md-8">
+            <div id="mc_embed_signup">
+                <form
+                    action="https://herokuapp.us14.list-manage.com/subscribe/post?u=66b8fe36761222168c0ab5d8b&amp;id=335f29a91a&amp;f_id=009e97e0f0"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <!-- <div class="row"> -->
+                        <div id="mc_embed_signup_scroll" class="row justify-content-center">
+                            <div class="col">
+                                <div class="mc-field-group ">
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address*" required>
+                                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                                </div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
                             </div>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div class="col-6">
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                name="b_66b8fe36761222168c0ab5d8b_335f29a91a" tabindex="-1" value="">
-                            </div>
-                            <div class="optionalParent">
-                                <div class="clear foot">
-                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                        class="button btn">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div class="col-4">
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                    name="b_66b8fe36761222168c0ab5d8b_335f29a91a" tabindex="-1" value="">
+                                </div>
+                                <div class="optionalParent">
+                                    <div class="clear foot d-flex align-items-center justify-content-center">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                            class="button btn">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                <!-- </div> -->
-            </form>
+                    <!-- </div> -->
+                </form>
+            </div>
+        </div>
+        <div class="col social-links">
+            <section>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100089334735487" target="_blank"
+                    rel="noopener"><i class="fab fa-facebook-f"></i></a>
+    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" target="_blank"
+                    rel="noopener"><i class="fab fa-google"></i></a>
+    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener"><i class="fab fa-instagram"></i></a>
+    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkdedin.com/" target="_blank"
+                    rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+    
+            </section>
         </div>
 
-        <!--End mc_embed_signup-->
-
-        <!-- Section: Links -->
-        <section class="footer-menu">
-            <div class="justify-content-center">
-                <a class=" text-decoration-none p-3 mb-2 " href="{% url 'privacy' %}">Privacy</a>
-                <a class=" text-decoration-none p-3 mb-2" href="{% url 'contact' %}">Contact</a>
-                <a class=" text-decoration-none p-3 mb-2" href="{% url 'faqs' %}">Faqs</a>
-                <a class=" text-decoration-none p-3m b-2" href="{% url 'account_signup' %}">Register</a>
-            </div>
-        </section>
     </div>
+
+    <section class="footer-menu p-1">
+        <div class="justify-content-center">
+            <a class=" text-decoration-none px-3 mb- " href="{% url 'privacy' %}">Privacy</a>
+            <a class=" text-decoration-none px-3 mb-" href="{% url 'contact' %}">Contact</a>
+            <a class=" text-decoration-none px-3 mb-" href="{% url 'faqs' %}">Faqs</a>
+            <a class=" text-decoration-none px-3 mb-" href="{% url 'account_signup' %}">Register</a>
+        </div>
+    </section>
 </footer>
 
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
