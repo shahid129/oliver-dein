@@ -1,8 +1,11 @@
 body {
     padding-top: 130px;
     font-family: 'Poppins', sans-serif;
+    /* Stick footer to the bottom of the page */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
 
 /* --------------- Navigation -------------- */
 
@@ -61,6 +64,9 @@ li.nav-item {
 }
 
 /* --------------- footer */
+footer{
+    margin-top: auto;
+}
 
 .footer-menu {
     background-color: #F99F38;
