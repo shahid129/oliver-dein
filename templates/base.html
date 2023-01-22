@@ -130,6 +130,11 @@
         //     bsToast.show();
         // })
 
+        // Remove toast after 1.5 seconds
+        setTimeout(function() {
+            $('.message-container').fadeOut('slow');
+        }, 1500); 
+
     </script>
     {% endblock %}
 
