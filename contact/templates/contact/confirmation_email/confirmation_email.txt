@@ -1,0 +1,15 @@
+
+Dear {{ name }}!
+
+Thank you for sending us a message. One of our team member will be in touch with you shortly.
+
+Here is a copy of your message 
+
+{{ original_message }}
+
+
+Check out our recent and feature products at https://oliver-dein.herokuapp.com/
+
+Kind Regards
+
+Oliver Dein

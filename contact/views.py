@@ -4,6 +4,8 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
 
+from django.template.loader import render_to_string
+
 from .models import Contact, Address
 from .forms import ContactForm
 
@@ -21,7 +23,13 @@ def contact(request):
 
             # Confirmation email is sent on submission of form
             topic = form.cleaned_data['topic']
-            message = form.cleaned_data['message']
+            name = form.cleaned_data['name']
+            original_message = form.cleaned_data['message']
+            message = render_to_string(
+                'contact/confirmation_email/confirmation_email.txt', {
+                    'name': name,
+                    'original_message': original_message
+                })
             email_from = settings.DEFAULT_FROM_EMAIL
             email_to = [form.cleaned_data['email']]
 
