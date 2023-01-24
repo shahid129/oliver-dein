@@ -118,6 +118,122 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 
 **Results: Pass**
 
+### As a site user I can **see review of each products ** so that I know the opinion of other people [#6](https://github.com/shahid129/oliver-dein/issues/6)
+
+**Acceptance Criteria:**
+- As a site user I can see review of each products so that I know the opinion of other people
+
+**Expected Results**
+- The user can see reviews of a product related to a product if a review exists.
+- User can create a review for a product [Image](docs/screenshot/testing/review.png)
+- User can also see review in the home page in a carousel [Image](docs/screenshot/testing/review-carosel.png)
+
+**Actual Results**
+- The user can see reviews of a product related to a product if a review exists.
+- User can create a review for a product [Image](docs/screenshot/testing/review.png)
+- User can also see review in the home page in a carousel [Image](docs/screenshot/testing/review-carosel.png)
+
+**Results: Pass**
+
+### As a site user I can change the quantity so that I can add the required number of items in the bag [#7](https://github.com/shahid129/oliver-dein/issues/7)
+
+**Acceptance Criteria:**
+- User can change the quantity of the products
+- The +/- button will disable at 1 and 100,
+
+**Expected Results**
+- Navigate to any product detail page and you will see a +/- button
+- Click on the +/- button to change the quantity of the items [Image](docs/screenshot/testing/%2B%3A-button.png)
+- Click "Add to Bag" to add the product to the bag [Image](docs/screenshot/testing/%2B%3A-button.png)
+
+**Actual Results**
+- The +/- button changes the quantity of the products
+
+**Results: Pass**
+
+### As a site user I can get notified so that i know every steps i am taking before buying products [#8](https://github.com/shahid129/oliver-dein/issues/8)
+
+**Acceptance Criteria:**
+- Users should know what they are doing by giving them visual interactions
+
+**Expected Results**
+- The user should get notified of all the actions they take on the page
+- sign in, sign out, add to basket, email notification etc
+
+**Actual Results**
+- The user is notified about their interaction
+
+**Results: Pass**
+
+### As a site user I can adjust shopping bag quantity so that I don not have to go back to products to adjust my bag [#9](https://github.com/shahid129/oliver-dein/issues/9)
+
+**Acceptance Criteria:**
+- User can change the quantity of the products
+- The +/- button will be disable at 1 and 100,
+
+**Expected Results**
+- Navigate to the shopping bag page and you will see a +/- button
+- Click on the +/- button to change the quantity of the items [Image](docs/screenshot/testing/%2B%3A-button.png)
+- Click "Add to Bag" to add the product to the bag [Image](docs/screenshot/testing/%2B%3A-button.png)
+- The +/- button is disabled at 1 and 100,
+
+**Actual Results**
+- The +/- button changes the quantity of the products
+- The +/- button is disabled at 1 and 100,
+
+**Results: Pass**
+
+### As a site user I can get email confirmation about my order so that I have all the details of my order [#11](https://github.com/shahid129/oliver-dein/issues/11)
+
+**Acceptance Criteria:**
+- Users can view their order details after they completed the order
+- Users need to receive an email with the order confirmation
+
+**Expected Results**
+- Navigate to the shopping bag page and complete an order
+- You will see checkout success page with your order details [Image](docs/screenshot/testing/order-confirmation.png)
+- You will also receive an email with your order details [Image](docs/screenshot/testing/order-confirmation-email.png)
+
+**Actual Results**
+- Checkout success page loads with order details [Image](docs/screenshot/testing/order-confirmation.png)
+- An email is sent with order details [Image](docs/screenshot/testing/order-confirmation-email.png)
+
+**Results: Pass**
+
+### As a user I can see the number of items in shopping bag so that I can keep track of what I am purchasing [#12](https://github.com/shahid129/oliver-dein/issues/12)
+
+**Acceptance Criteria:**
+- Users can see the number of each product in the bag
+- Users can update the number of products from the bag
+
+**Expected Results**
+- Navigate to the shopping bag page and you will see a +/- button
+- The number of items in the bag is displayed between the + and - buttons [Image](docs/screenshot/testing/%2B%3A-button.png)
+
+**Actual Results**
+- The number of items in the bag is displayed between the + and - buttons [Image](docs/screenshot/testing/%2B%3A-button.png)
+
+**Results: Pass**
+
+
+### As a site user I can see the price of individual items so that I know how much I am spending on each item [#13](https://github.com/shahid129/oliver-dein/issues/13)
+
+**Acceptance Criteria:**
+- Users can see the number of each product in the bag and their individual price
+- Users can see the subtotal of a product as well
+
+**Expected Results**
+- Navigate to the shopping bag page and you will see a +/- button
+- The number of items in the bag is displayed between the + and - buttons [Image](docs/screenshot/testing/%2B%3A-button.png)
+- The individual price of each item is displayed on the right side
+- Subtotal is displayed at the far end [Image](docs/screenshot/testing/shopping-bag-each-price.png)
+
+**Actual Results**
+- The individual price of each item is displayed on the right side
+- Subtotal is displayed at the far end [Image](docs/screenshot/testing/shopping-bag-each-price.png)
+
+**Results: Pass**
+
 
 
 
