@@ -385,6 +385,7 @@ footer{
 
 .faqs:hover {
     color: #F99F38;
+    cursor: pointer;
 }
 
 /* ------------------------ Product Image size */
