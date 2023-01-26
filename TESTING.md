@@ -585,3 +585,13 @@ home/app | Pass | [Image](docs/screenshot/testing/python-testing/home-validation
 home/url | Pass | [Image](docs/screenshot/testing/python-testing/home-validation-urls.png)
 home/views | Pass | [Image](docs/screenshot/testing/python-testing/home-validation-views.png)
 home/test-views | Pass | [Image](docs/screenshot/testing/python-testing/home-validation-test-views.png)
+**FAQS APP**
+faqs/admin | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-admin.png)
+faqs/app | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-apps.png)
+faqs/forms | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-forms.png)
+faqs/models | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-models.png)
+faqs/url | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-urls.png)
+faqs/views | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-views.png)
+faqs/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-test-forms.png)
+faqs/test-model | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-test-models.png)
+faqs/test-views | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-test-views.png)
