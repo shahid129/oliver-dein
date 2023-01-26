@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+/*globals $:false */
+
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
@@ -18,7 +21,9 @@ var style = {
     }
 };
 
-var card = elements.create('card', {style: style});
+var card = elements.create('card', {
+    style: style
+});
 card.mount('#card-element');
 
 // real time validation errors on the card element
@@ -42,24 +47,26 @@ card.addEventListener('change', function (event) {
 
 var form = document.getElementById('payment-form');
 
-form.addEventListener('submit', function(ev) {
+form.addEventListener('submit', function (ev) {
     ev.preventDefault();
-    card.update({ 'disabled': true});
+    card.update({
+        'disabled': true
+    });
     $('#submit-button').attr('disabled', true);
-    $('#payment-form').fadeToggle(100)
-    $('#loading-overlay').fadeToggle(100)
+    $('#payment-form').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100);
 
-    var saveInfo = Boolean($('#id-save-info').attr('checked'))
+    var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // from using (% csrf_token %) in the form
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
     var postData = {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
         'save_info': saveInfo,
-    }
+    };
     var url = '/checkout/cache_checkout_data/';
 
-    $.post(url, postData).done(function() {
+    $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: card,
@@ -67,7 +74,7 @@ form.addEventListener('submit', function(ev) {
                     name: $.trim(form.full_name.value),
                     phone: $.trim(form.phone_number.value),
                     email: $.trim(form.email.value),
-                    address:{
+                    address: {
                         line1: $.trim(form.street_address1.value),
                         line2: $.trim(form.street_address2.value),
                         city: $.trim(form.town_or_city.value),
@@ -88,7 +95,7 @@ form.addEventListener('submit', function(ev) {
                     state: $.trim(form.county.value),
                 }
             },
-        }).then(function(result) {
+        }).then(function (result) {
             if (result.error) {
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
@@ -97,9 +104,11 @@ form.addEventListener('submit', function(ev) {
                     </span>
                     <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
-                $('#payment-form').fadeToggle(100)
-                $('#loading-overlay').fadeToggle(100)
-                card.update({ 'disabled': false});
+                $('#payment-form').fadeToggle(100);
+                $('#loading-overlay').fadeToggle(100);
+                card.update({
+                    'disabled': false
+                });
                 $('#submit-button').attr('disabled', false);
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
@@ -110,5 +119,5 @@ form.addEventListener('submit', function(ev) {
     }).fail(function () {
         // just reload the page, the error will be in django messages
         location.reload();
-    })
+    });
 });

@@ -538,3 +538,6 @@ File | Result | Evidence |
 static/css/base.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/validation-base-css.png)
 static/profiles/css/profile.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/validation-profile-css.png)
 static/checkout/css/checkout.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/validation-checkout-css.png)
+
+### JS
+[JS Hint](https://jshint.com/) was used to validate the JavaScript.

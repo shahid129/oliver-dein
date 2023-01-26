@@ -1,4 +1,6 @@
 <script>
+    /*jshint esversion: 6 */
+    /*globals $:false */
     // Enable and disable +/- buttons
     function handleEnableDisabled(itemId) {
         var currentValue = parseInt($(`.id_qty_${itemId}`).val());
@@ -10,41 +12,37 @@
 
     // Enable and disable all inputs on page load
     var allQtyInputs = $('.qty_input');
-    for(var i = 0; i < allQtyInputs.length; i++){
+    for (var i = 0; i < allQtyInputs.length; i++) {
         var itemId = $(allQtyInputs[i]).data('item_id');
         handleEnableDisabled(itemId);
     }
 
     //  Enable and disable every time the input is changed
-    $('.qty_input').change(function() {
+    $('.qty_input').change(function () {
         var itemId = $(this).data('item_id');
         handleEnableDisabled(itemId);
     });
 
-
-
     // Increment quantity
-    $('.increment-qty').click(function(e) {
+    $('.increment-qty').click(function (e) {
         e.preventDefault();
         var itemId = $(this).data('item_id');
         var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
         var allQtyInputs = $(`.input-group-${itemId} input[name='quantity']`);
         var currentValue = parseInt($(closestInput).val());
         $(allQtyInputs).val(currentValue + 1);
-        var itemId = $(this).data('item_id')
-        handleEnableDisabled(itemId)
-    })
+        handleEnableDisabled(itemId);
+    });
 
     // Decrement quantity
-    $('.decrement-qty').click(function(e) {
+    $('.decrement-qty').click(function (e) {
         e.preventDefault();
         var itemId = $(this).data('item_id');
         var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
         var allQtyInputs = $(`.input-group-${itemId} input[name='quantity']`);
         var currentValue = parseInt($(closestInput).val());
         $(allQtyInputs).val(currentValue - 1);
-        var itemId = $(this).data('item_id')
-        console.log(itemId)
-        handleEnableDisabled(itemId)
+        console.log(itemId);
+        handleEnableDisabled(itemId);
     });
 </script>
