@@ -4,4 +4,4 @@ from .models import Privacy
 
 @admin.register(Privacy)
 class PrivacyAdmin(admin.ModelAdmin):
-    list_display = ['title',]
+    list_display = ['title', ]

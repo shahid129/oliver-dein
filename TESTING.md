@@ -574,3 +574,9 @@ product/views | Pass | [Image](docs/screenshot/testing/python-testing/products-v
 product/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-forms.png)
 product/test-model | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-models.png)
 product/test-views | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-views.png)
+Privacy APP
+privacy/admin | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-admin.png)
+privacy/app | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-app.png)
+privacy/models | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-models.png)
+privacy/url | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-urls.png)
+privacy/views | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-views.png)
