@@ -54,9 +54,9 @@
                                 </td>
                                 <td class="py-3 w-25">
                                     {% if item.product.discount_price %}
-                                        <strike class="text-danger">
+                                        <del class="text-danger">
                                             <p class="text-center">€{{ item.product.price }}</p>
-                                        </strike>
+                                        </del>
                                     <p class="text-center">€{{ item.product.discount_price }}</p>
 
                                     {% else %}

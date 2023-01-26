@@ -15,9 +15,9 @@
             <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
             <p>
                 {% if item.product.discount_price %}
-                    <strike class="text-danger">
+                    <del class="text-danger">
                         €{{ item.product.price }}
-                    </strike>
+                    </del>
                 €{{ item.product.discount_price }}
 
                 {% else %}
