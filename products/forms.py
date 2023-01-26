@@ -12,7 +12,8 @@ class ProductForm(forms.ModelForm):
         fields = '__all__'
         exclude = ('slug',)
         abstract = True
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(
+        label='Image', required=False, widget=CustomClearableFileInput)
 
 
 class CommentForm(forms.ModelForm):

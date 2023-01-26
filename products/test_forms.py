@@ -6,6 +6,7 @@ class TestForm(TestCase):
     """
     Test the form
     """
+
     def test_product_form(self):
         """
         Test if all the fields are displayed in the form

@@ -20,7 +20,7 @@ def products(request):
     direction = None
 
     if request.GET:
-        # Sort out products 
+        # Sort out products
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -40,16 +40,17 @@ def products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-        
+
         # Get search items
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, 'Please enter your search criteria')
                 return redirect(reverse('products'))
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
-    
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -103,10 +104,12 @@ def add_product(request):
             # return redirect(reverse('add_product'))
             return redirect(reverse('add_product'))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add product. \
+                    Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_products.html'
     context = {
         'form': form,
@@ -121,7 +124,7 @@ def edit_product(request, slug):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry! Only store owners are allowed here.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, slug=slug)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -130,7 +133,9 @@ def edit_product(request, slug):
             messages.success(request, f'Successfully updated {product.name}!')
             return redirect(reverse('product_detail', args=[product.slug]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update product.\
+                    Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
