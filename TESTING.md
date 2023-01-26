@@ -383,3 +383,128 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 - You will be redirected to home page
 
 **Results: Pass**
+
+
+### As a Store Owner
+
+### As a admin I can add products from the site so that I do not have to log in to the admin site [#18](https://github.com/shahid129/oliver-dein/issues/18)
+
+**Acceptance Criteria:**
+- Store owners can add products
+
+**Expected Results**
+- Log in to the site with your admin details
+- Go to stock management under the account section in the menu
+- Here, you can add a product [Image](docs/screenshot/testing/product-management.png)
+
+**Actual Results**
+- Store owners or admin can add a products without logging into the admin site [Image](docs/screenshot/testing/product-management.png)
+
+**Results: Pass**
+
+### As a admin I can edit an item so that I can edit and update the items easily [#19](https://github.com/shahid129/oliver-dein/issues/19)
+
+**Acceptance Criteria:**
+- Store owners can edit products
+
+**Expected Results**
+- Log in to the site with your admin details
+- Go to any product you wish to edit
+- Click on the edit button which is only vissible to admin or superuser
+- Here, you can edit a product [Image](docs/screenshot/testing/product-management-edit.png)
+
+**Actual Results**
+- Store owners or admin can edit a products without logging into the admin site [Image](docs/screenshot/testing/product-management-edit.png)
+
+**Results: Pass**
+
+
+### As a admin I can delete item so that I can move it from website [#20](https://github.com/shahid129/oliver-dein/issues/20)
+
+**Acceptance Criteria:**
+- Store owners can delete products
+
+**Expected Results**
+- Log in to the site with your admin details
+- Go to any product you wish to delete
+- Click on the delete button which is only vissible to admin or superuser
+- Here, you can delete a product [Image](docs/screenshot/testing/product-management-delete.png)
+- You will be asked to confirm if you really want to delete the product
+
+**Actual Results**
+- Store owners or admin can edit a products without logging into the admin site [Image](docs/screenshot/testing/product-management-delete.png)
+
+**Results: Pass**
+
+### As a Admin I can add faqs so that I can faqs easily to the page [#21](https://github.com/shahid129/oliver-dein/issues/21)
+
+**Acceptance Criteria:**
+- Store owners can add faqs
+
+**Expected Results**
+- Log in to the site with your admin details
+- Go to FAQS at the bottom of the page
+- Click on ADD FAQS to add new faqs
+- Here, you add FAQS [Image](docs/screenshot/testing/faqs-add.png)
+
+
+**Actual Results**
+- Store owners or admin can add faqs without logging into the admin site [Image](docs/screenshot/testing/faqs-add.png)
+
+**Results: Pass**
+
+
+### As a Admin I can add faqs so that I can faqs easily to the page [#21](https://github.com/shahid129/oliver-dein/issues/21)
+
+**Acceptance Criteria:**
+- Store owners can edit faqs
+
+**Expected Results**
+- Log in to the site with your admin details
+- Go to FAQS at the bottom of the page
+- Click on EDIT FAQS to add 
+- Here, you edit FAQS [Image](docs/screenshot/testing/faqs-edit.png)
+
+
+**Actual Results**
+- Store owners or admin can edit faqs without logging into the admin site [Image](docs/screenshot/testing/faqs-edit.png)
+
+**Results: Pass**
+
+
+### As an admin I can delete faqs so that I can remove from the page [#23](https://github.com/shahid129/oliver-dein/issues/23)
+
+**Acceptance Criteria:**
+- Store owners can delete faqs
+
+**Expected Results**
+- Log in to the site with your admin details
+- Go to FAQS at the bottom of the page
+- Click on Delete FAQS to add 
+- Here, you edit FAQS [Image](docs/screenshot/testing/faqs-delete.png)
+
+
+**Actual Results**
+- Store owners or admin can edit faqs without logging into the admin site [Image](docs/screenshot/testing/faqs-delete.png)
+
+**Results: Pass**
+
+
+### As a Admin I can approve or delete comments so that I can keep my website safe and clean place inappropriate words [#24](https://github.com/shahid129/oliver-dein/issues/24)
+
+**Acceptance Criteria:**
+- Only the admin can approve or delete comments
+
+**Expected Results**
+- Log in to the admin-site with your admin details
+- Go to Comment section from the menu on the left hand side
+- Click on the comment that you want to approve or delete [Image](docs/screenshot/testing/comment-review.png)
+
+
+
+**Actual Results**
+- Store owners or admin can approve or delete comments [Image](docs/screenshot/testing/comment-review.png)
+
+
+
+**Results: Pass**
