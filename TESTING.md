@@ -513,6 +513,7 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 
 
 ### HTML
+[W3C](https://validator.w3.org/nu/) was used to validate the HTML on all pages of the site.
 Page Title | Result | Evidence | 
 --- | --- | --- |
 Home | Pass | [Home Page Validation](docs/screenshot/testing/validation-home.png)
@@ -522,4 +523,16 @@ Privacy | Pass | [Privacy Page Validation](docs/screenshot/testing/validation-pr
 Contact | Pass | [Contact Page Validation](docs/screenshot/testing/validation-contact.png)
 Sign Up | Pass | [Sign Up Page Validation](docs/screenshot/testing/validation-signup.png)
 Sign In | Pass | [Sign In Page Validation](docs/screenshot/testing/validation-sign-in.png)
-Bag | Pass | [bag Page Validation](docs/screenshot/testing/validation-bag.png)
+Bag | Pass | [Bag Page Validation](docs/screenshot/testing/validation-bag.png)
+Checkout | Pass | [Checkout Page Validation](docs/screenshot/testing/validation-checkout.png)
+Checkout Success | Pass | [bag Page Validation](docs/screenshot/testing/validation-checkout-success.png)
+Faqs | Pass | [Faqs Page Validation](docs/screenshot/testing/validation-faqs.png)
+Search | Pass | [Search Page Validation](docs/screenshot/testing/validation-search.png)
+
+
+### CSS 
+[W3C](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
+
+File | Result | Evidence | 
+--- | --- | --- |
+static/css/base.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/)
