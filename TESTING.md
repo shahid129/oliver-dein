@@ -541,3 +541,9 @@ static/checkout/css/checkout.css | Pass | [static/css/base.css Validation](docs/
 
 ### JS
 [JS Hint](https://jshint.com/) was used to validate the JavaScript.
+
+File | Result | Evidence | 
+--- | --- | --- |
+checkout/static/checkout/js/stripe-elements.js | Pass | [stripe_elements.js](docs/screenshot/testing/validation-stripe-js.png)
+profiles/static/profiles/js/countryfield.js | Pass | [countryfield.js](docs/screenshot/testing/validation-profile-js.png)
+products/templates/products/includes/quantity_input_script | Pass | [quantity_input_script](docs/screenshot/testing/validation-input-button-js.png)
