@@ -36,7 +36,10 @@ def add_faqs(request):
             messages.success(request, 'FAQs added successfully.')
             return redirect('faqs')
         else:
-            messages.info(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.info(
+                request, 'Failed to update product.\
+                     Please ensure the form is valid.'
+            )
     else:
         form = FaqsForm()
 
@@ -66,7 +69,8 @@ def edit_faqs(request, item_id):
             messages.success(request, 'FAQs updated successfully.')
             return redirect('faqs')
         else:
-            messages.info(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.info(request, 'Failed to update product.\
+                Please ensure the form is valid.')
     else:
         form = FaqsForm(instance=item)
 

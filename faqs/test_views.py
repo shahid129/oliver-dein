@@ -9,11 +9,12 @@ class TestViews(TestCase):
     Test for the views
     """
     # ----------------- Test all the urls
+
     def setUp(self):
         self.superuser = User.objects.create_superuser(
             'admin', 'admin@email.com', 'adminpassword'
         )
-        
+
         self.user = User.objects.create_user(
             'shahid', 'shahid@email.com', 'shahidpassword'
         )
@@ -56,7 +57,7 @@ class TestViews(TestCase):
         """
         self.client.login(username='admin', password='adminpassword')
         response = self.client.get(f'/faqs/delete_faqs/{self.faq.id}/')
-        self.assertEqual(response.status_code, 302)  
+        self.assertEqual(response.status_code, 302)
         # self.assertRedirects(response, '/faqs/')
 
     # ----------------- End of url test
@@ -122,7 +123,8 @@ class TestViews(TestCase):
 
         message = list(response.context.get('messages'))[0]
         self.assertEqual(message.tags, "error")
-        self.assertTrue('Sorry! You are not authorised to do that' in message.message)
+        self.assertTrue(
+            'Sorry! You are not authorised to do that' in message.message)
 
     def test_only_superuser_can_edit(self):
         """
@@ -136,7 +138,8 @@ class TestViews(TestCase):
 
         message = list(response.context.get('messages'))[0]
         self.assertEqual(message.tags, "error")
-        self.assertTrue('Sorry! You are not authorised to do that' in message.message)
+        self.assertTrue(
+            'Sorry! You are not authorised to do that' in message.message)
 
     def test_only_superuser_can_delete(self):
         """
@@ -150,4 +153,5 @@ class TestViews(TestCase):
 
         message = list(response.context.get('messages'))[0]
         self.assertEqual(message.tags, "error")
-        self.assertTrue('Sorry! You are not authorised to do that' in message.message)
+        self.assertTrue(
+            'Sorry! You are not authorised to do that' in message.message)
