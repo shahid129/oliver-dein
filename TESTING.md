@@ -506,5 +506,20 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 - Store owners or admin can approve or delete comments [Image](docs/screenshot/testing/comment-review.png)
 
 
-
 **Results: Pass**
+
+
+### Validator Testing
+
+
+### HTML
+Page Title | Result | Evidence | 
+--- | --- | --- |
+Home | Pass | [Home Page Validation](docs/screenshot/testing/validation-home.png)
+Products | Pass | [Products Page Validation](docs/screenshot/testing/validation-products.png)
+Products Detail | Pass | [Products Detail Page Validation](docs/screenshot/testing/validation-product-detail.png)
+Privacy | Pass | [Privacy Page Validation](docs/screenshot/testing/validation-privacy.png)
+Contact | Pass | [Contact Page Validation](docs/screenshot/testing/validation-contact.png)
+Sign Up | Pass | [Sign Up Page Validation](docs/screenshot/testing/validation-signup.png)
+Sign In | Pass | [Sign In Page Validation](docs/screenshot/testing/validation-sign-in.png)
+Bag | Pass | [bag Page Validation](docs/screenshot/testing/validation-bag.png)
