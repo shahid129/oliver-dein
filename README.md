@@ -373,7 +373,7 @@ The home page is divided into different sections.
 - Implement Social login where users can log in using social media login, such facebook, instagram, google.
 
 # Testing 
-Please refer to [TESTING](DEPLOYMENT.md) file for all testing performed
+Please refer to [TESTING](TESTING.md) file for all testing performed
 
 # Technology
 

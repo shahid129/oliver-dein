@@ -235,14 +235,19 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 **Results: Pass**
 
 
+### As a site user I can see the total cost so that I can track my total purchasing amount [#14](https://github.com/shahid129/oliver-dein/issues/14)
 
+**Acceptance Criteria:**
+- Users can see the total price of the products
 
+**Expected Results**
+- Add some products to the shopping bag and navigate to the shopping bag
+- The total price of the items in the bag is shown at the bottom, right hand side [Image](docs/screenshot/testing/shopping-bag-grand-total.png)
 
+**Actual Results**
+- The total price of the items in the bag is shown at the bottom, right hand side [Image](docs/screenshot/testing/shopping-bag-grand-total.png)
 
-
-
-
-
+**Results: Pass**
 
 
 ### Orders and Checkout - Delivery info [#15](https://github.com/shahid129/oliver-dein/issues/15)
@@ -337,24 +342,6 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 
 **Results: Pass**
 
-### As a site I can logout so that my account remains safe [#28](https://github.com/shahid129/oliver-dein/issues/28)
-
-**Acceptance Criteria:**
-- Notify a user about log out from the site
-
-**Expected Results**
-- Click on the Sign Out button from the menu
-- It will ask you if you really want to sign out
-- A pop up appears saying that 'You have signed out' [Image](docs/screenshot/testing/sign-out.png)
-- You will be redirected to home page
-
-**Actual Results**
-- Click on the Sign Out button from the menu
-- It will ask you if you really want to sign out
-- A pop up appears saying that 'You have signed out'
-- You will be redirected to home page
-
-**Results: Pass**
 
 ### As a site user I can login so that I can keep track of my purchases and store my details securely [#27](https://github.com/shahid129/oliver-dein/issues/27)
 
@@ -375,5 +362,24 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 -  You will be redirected to home page
 -  A pop up appears saying that 'You are logged in as NAME'
 -  In checkout page page you can save your details for future purchases
+
+**Results: Pass**
+
+### As a site I can logout so that my account remains safe [#28](https://github.com/shahid129/oliver-dein/issues/28)
+
+**Acceptance Criteria:**
+- Notify a user about log out from the site
+
+**Expected Results**
+- Click on the Sign Out button from the menu
+- It will ask you if you really want to sign out
+- A pop up appears saying that 'You have signed out' [Image](docs/screenshot/testing/sign-out.png)
+- You will be redirected to home page
+
+**Actual Results**
+- Click on the Sign Out button from the menu
+- It will ask you if you really want to sign out
+- A pop up appears saying that 'You have signed out'
+- You will be redirected to home page
 
 **Results: Pass**
