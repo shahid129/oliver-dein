@@ -44,10 +44,10 @@
                     <div class="card h-100 product">
                         <!-- Product image-->
                         {% if product.image %}
-                            <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}" />
+                            <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                         {% else %}
                         <a href="">
-                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}shahid.png" alt="{{ product.name }}" />
+                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}shahid.png" alt="{{ product.name }}">
                         </a>
                         {% endif %}
 

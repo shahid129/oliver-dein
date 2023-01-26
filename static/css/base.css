@@ -10,8 +10,12 @@ body {
 /* --------------- Navigation -------------- */
 
 .container-fluid {
-    padding: 0 5%;
+    padding-left: 5%;
     margin: -20px 0px;
+}
+
+div#navbarSupportedContent {
+    padding-right: 5%;
 }
 
 .navbar-nav {
@@ -428,7 +432,11 @@ footer{
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(249, 159, 56, 0.6);
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(249, 159, 56, 0.6);
-  }
+}
+
+.comment-image {
+    width: 200px;
+}
 
 /* ------------------------ Media Queries */
 

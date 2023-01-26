@@ -5,7 +5,7 @@
 
 <head>
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Oliver dein, online shopping, free delivery, furniture, nursery, kids kitchen, dining table, 
@@ -59,20 +59,25 @@
 <body>
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand d-none d-sm-flex" href="{% url 'home' %}">
-                    <img class="brand-logo"  src="{% static 'oliver-dein-logo.png' %}" alt="Oliver dein logo">
-                </a>
+            <ul class="container-fluid">
+                <li class="list-unstyled">
+                    <a class="navbar-brand d-none d-sm-flex" href="{% url 'home' %}">
+                        <img class="brand-logo"  src="{% static 'oliver-dein-logo.png' %}" alt="Oliver dein logo">
+                    </a>
+                </li>
                 {% include 'includes/mobile-header-top.html' %}
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <li class="list-unstyled">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                </li>
                 <!-- {% include 'includes/mobile-header-top.html' %} -->
-                {% include 'includes/main-nav.html' %}
-            </div>
+                
+            </ul>
+            {% include 'includes/main-nav.html' %}
         </nav>
         <div>
             <div id="delivery-banner" class="row text-center">
@@ -110,7 +115,7 @@
     {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
         console.log($('.toast').toast('show'))
         // console.log($('.toast'))
