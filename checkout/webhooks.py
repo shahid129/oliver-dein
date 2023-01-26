@@ -7,6 +7,7 @@ from checkout.webhook_handler import StripeWH_Handler
 
 import stripe
 
+
 @require_POST
 @csrf_exempt
 def webhook(request):
@@ -38,10 +39,11 @@ def webhook(request):
     # setup a webhook handler
     handler = StripeWH_Handler(request)
 
-    # Map webhook events to a relvant handler functions
+    # Map webhook events to a relevant handler functions
     event_map = {
         'payment_intent.succeeded': handler.handle_payment_intent_succeeded,
-        'payment_intent.payment_failed': handler.handle_payment_intent_payment_failed,
+        'payment_intent.payment_failed':
+        handler.handle_payment_intent_payment_failed,
     }
 
     # get the webhook type from stripe
