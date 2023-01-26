@@ -111,7 +111,6 @@ footer{
 #mc-embedded-subscribe:hover {
     background-color: #F99F38 !important;
     color: white !important;
-    border-color: #F99F38 !important;
 }
 
 #mc_embed_signup .helper_text {
@@ -121,8 +120,8 @@ footer{
 
 #mc_embed_signup input {
     border: 0.6px solid #ABB0B2 !important;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 33px !important;
 }
 
@@ -187,8 +186,6 @@ footer{
 .btn:hover {
     background-color: #F99F38;
     color: white;
-    border-color: #F99F38;
-
 }
 
 .bg-primary {
@@ -377,7 +374,6 @@ footer{
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
     border-radius: 0;
 }
 
@@ -410,8 +406,8 @@ footer{
 
 #mc_embed_signup .button .foot{
     /* border: 1px solid #ABB0B2; */
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 33px;
     padding: 40px;
 }
@@ -431,8 +427,8 @@ footer{
 .form-control:focus {
     border-color: #F99F38;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(249, 159, 56, 0.6);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(249, 159, 56, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(249, 159, 56, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(249, 159, 56, 0.6);
 }
 
 .comment-image {
