@@ -8,6 +8,7 @@ class TestViews(TestCase):
     """
     Test for the if the home page loads
     """
+
     def test_home_index_page(self):
         """
         Test home page
