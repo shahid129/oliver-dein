@@ -7,6 +7,7 @@ class TestModels(TestCase):
     """
     Test for models
     """
+
     def test_if_the_model_returns_a_string(self):
         user = User.objects.create_user(
             'shahid',

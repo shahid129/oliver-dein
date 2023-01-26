@@ -13,4 +13,3 @@ class TestForm(TestCase):
         """
         form = UserProfileForm({})
         self.assertTrue(form.is_valid())
-
