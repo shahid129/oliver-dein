@@ -555,7 +555,7 @@ All Python files that are not Django-populated have successfully passed the [Cod
 
 File | Result | Evidence | 
 --- | --- | --- |
-PROFILE APP
+**PROFILE APP**
 profile/app | Pass | [Image](docs/screenshot/testing/python-testing/validation-product-admin.png)
 profile/forms | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-forms.png)
 profile/models | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-model.png)
@@ -564,7 +564,7 @@ profile/views | Pass | [Image](docs/screenshot/testing/python-testing/profile-va
 profile/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-test-form.png)
 profile/test-model | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-test-models.png)
 profile/test-views | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-test-views.png)
-PRODUCT APP
+**PRODUCT APP**
 product/admin | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-admin.png)
 product/app | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-app.png)
 product/forms | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-forms.png)
@@ -574,9 +574,14 @@ product/views | Pass | [Image](docs/screenshot/testing/python-testing/products-v
 product/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-forms.png)
 product/test-model | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-models.png)
 product/test-views | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-views.png)
-Privacy APP
+**PRIVACY APP**
 privacy/admin | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-admin.png)
 privacy/app | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-app.png)
 privacy/models | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-models.png)
 privacy/url | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-urls.png)
 privacy/views | Pass | [Image](docs/screenshot/testing/python-testing/privacy-validation-views.png)
+**HOME APP**
+home/app | Pass | [Image](docs/screenshot/testing/python-testing/home-validation-apps.png)
+home/url | Pass | [Image](docs/screenshot/testing/python-testing/home-validation-urls.png)
+home/views | Pass | [Image](docs/screenshot/testing/python-testing/home-validation-views.png)
+home/test-views | Pass | [Image](docs/screenshot/testing/python-testing/home-validation-test-views.png)
