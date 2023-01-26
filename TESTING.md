@@ -547,3 +547,30 @@ File | Result | Evidence |
 checkout/static/checkout/js/stripe-elements.js | Pass | [stripe_elements.js](docs/screenshot/testing/validation-stripe-js.png)
 profiles/static/profiles/js/countryfield.js | Pass | [countryfield.js](docs/screenshot/testing/validation-profile-js.png)
 products/templates/products/includes/quantity_input_script | Pass | [quantity_input_script](docs/screenshot/testing/validation-input-button-js.png)
+
+### PYTHON 
+
+All Python files that are not Django-populated have successfully passed the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#) online check with no issues raised.
+[PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#installation) was also installed to check the codes
+
+File | Result | Evidence | 
+--- | --- | --- |
+PROFILE APP
+profile/app | Pass | [Image](docs/screenshot/testing/python-testing/validation-product-admin.png)
+profile/forms | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-forms.png)
+profile/models | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-model.png)
+profile/url | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-url.png)
+profile/views | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-views.png)
+profile/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-test-form.png)
+profile/test-model | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-test-models.png)
+profile/test-views | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-test-views.png)
+PRODUCT APP
+product/admin | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-admin.png)
+product/app | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-app.png)
+product/forms | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-forms.png)
+product/models | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-models.png)
+product/url | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-urls.png)
+product/views | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-views.png)
+product/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-forms.png)
+product/test-model | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-models.png)
+product/test-views | Pass | [Image](docs/screenshot/testing/python-testing/products-validation-test-views.png)
