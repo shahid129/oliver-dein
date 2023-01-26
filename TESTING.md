@@ -535,4 +535,6 @@ Search | Pass | [Search Page Validation](docs/screenshot/testing/validation-sear
 
 File | Result | Evidence | 
 --- | --- | --- |
-static/css/base.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/)
+static/css/base.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/validation-base-css.png)
+static/profiles/css/profile.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/validation-profile-css.png)
+static/checkout/css/checkout.css | Pass | [static/css/base.css Validation](docs/screenshot/testing/validation-checkout-css.png)
