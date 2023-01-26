@@ -30,4 +30,3 @@ class ContactForm(forms.ModelForm):
             self.fields[field].label = False
             # add class to fields
             self.fields[field].widget.attrs['class'] = 'm-2'
-

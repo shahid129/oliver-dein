@@ -6,6 +6,7 @@ class TestModels(TestCase):
     """
     Test for models
     """
+
     def test_if_contact_model_returns_a_string(self):
         """
         Test to see if it returns a string

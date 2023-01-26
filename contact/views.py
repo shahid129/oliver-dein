@@ -38,7 +38,7 @@ def contact(request):
                 message,
                 email_from,
                 email_to
-                )
+            )
 
             messages.success(request, 'Message submitted successfully \
                 A confirmation email is sent with original message')
