@@ -6,7 +6,7 @@ from products.models import Product
 
 def bag_contents(request):
     """
-    A function to check if the user can get free delivery 
+    A function to check if the user can get free delivery
     and total cost
     """
     bag_items = []
@@ -45,7 +45,8 @@ def bag_contents(request):
                 })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery_charge = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        delivery_charge = total * \
+            Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery_charge = 0

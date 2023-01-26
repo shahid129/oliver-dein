@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse ,get_object_or_404
+from django.shortcuts import (render, redirect, reverse, HttpResponse,
+                              get_object_or_404)
 from django.contrib import messages
 
 from products.models import Product
@@ -28,24 +29,30 @@ def add_to_bag(request, slug):
         if slug in list(bag.keys()):
             if size in bag[slug]['items_by_size'].keys():
                 bag[slug]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[slug]["items_by_size"][size]}')
+                messages.success(
+                    request, f'Updated size {size.upper()} {product.name}\
+                         quantity to {bag[slug]["items_by_size"][size]}')
             else:
                 bag[slug]['items_by_size'][size] = quantity
-                messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
+                messages.success(
+                    request, f'Added size {size.upper()} {product.name}\
+                         to your bag')
         else:
             bag[slug] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
+            messages.success(
+                request, f'Added size {size.upper()}\
+                     {product.name} to your bag')
     else:
         if slug in list(bag.keys()):
             bag[slug] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[slug]}')
+            messages.success(
+                request, f'Updated {product.name} quantity to {bag[slug]}')
         else:
             bag[slug] = quantity
             messages.success(request, f'Added { product.name } to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
-
 
 
 def adjust_bag(request, slug):
@@ -61,19 +68,25 @@ def adjust_bag(request, slug):
     if size:
         if quantity > 0:
             bag[slug]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {bag[slug]["items_by_size"][size]}')
+            messages.success(
+                request, f'Updated size {size.upper()} {product.name}\
+                     quantity to {bag[slug]["items_by_size"][size]}')
         else:
             del bag[slug]['items_by_size'][size]
             if not bag[slug]['items_by_size']:
                 bag.pop(slug)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your bag') 
+            messages.success(
+                request, f'Removed size {size.upper()} {product.name}\
+                     from your bag')
     else:
         if quantity > 0:
             bag[slug] = quantity
-            messages.success(request, f'Updated { product.name } quantity to {bag[slug]} ')
+            messages.success(
+                request, f'Updated { product.name } quantity to {bag[slug]} ')
         else:
             bag.pop(slug)
-            messages.success(request, f'Removed { product.name } from your bag')
+            messages.success(
+                request, f'Removed { product.name } from your bag')
 
     request.session['bag'] = bag
     return redirect(reverse('bag'))
@@ -83,7 +96,6 @@ def remove_from_bag(request, slug):
     """Remove the item from  bag"""
 
     product = get_object_or_404(Product, slug=slug)
-
 
     try:
         size = None
@@ -95,7 +107,9 @@ def remove_from_bag(request, slug):
             del bag[slug]['items_by_size'][size]
             if not bag[slug]['items_by_size']:
                 bag.pop(slug)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
+            messages.success(
+                request, f'Removed size {size.upper()} {product.name}\
+                    from your bag')
         else:
             bag.pop(slug)
             messages.success(request, f'Removed {product.name} from your bag')
