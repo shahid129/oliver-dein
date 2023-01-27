@@ -595,3 +595,13 @@ faqs/views | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validati
 faqs/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-test-forms.png)
 faqs/test-model | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-test-models.png)
 faqs/test-views | Pass | [Image](docs/screenshot/testing/python-testing/faqs-validation-test-views.png)
+**Contact APP**
+contact/admin | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-admin.png)
+contact/app | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-apps.png)
+contact/forms | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-forms.png)
+contact/models | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-models.png)
+contact/url | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-urls.png)
+contact/views | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-views.png)
+contact/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-test-forms.png)
+contact/test-model | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-test-models.png)
+contact/test-views | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-test-views.png)
