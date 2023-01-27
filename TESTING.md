@@ -615,3 +615,7 @@ checkout/url | Pass | [Image](docs/screenshot/testing/python-testing/checkout-va
 checkout/views | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-views.png)
 checkout/webhook_handler | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-webhook_handler.png)
 checkout/webhook | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-webhooks.png)
+**Bag APP**
+bag/contexts | Pass | [Image](docs/screenshot/testing/python-testing/bag-validation-contexts.png)
+bag/urls | Pass | [Image](docs/screenshot/testing/python-testing/bag-validation-urls.png)
+bag/views | Pass | [Image](docs/screenshot/testing/python-testing/bag-validation-views.png)
