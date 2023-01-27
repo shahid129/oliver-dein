@@ -556,7 +556,7 @@ All Python files that are not Django-populated have successfully passed the [Cod
 File | Result | Evidence | 
 --- | --- | --- |
 **PROFILE APP**
-profile/app | Pass | [Image](docs/screenshot/testing/python-testing/validation-product-admin.png)
+profile/app | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-app.png)
 profile/forms | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-forms.png)
 profile/models | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-model.png)
 profile/url | Pass | [Image](docs/screenshot/testing/python-testing/profile-validation-url.png)
