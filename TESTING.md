@@ -605,3 +605,13 @@ contact/views | Pass | [Image](docs/screenshot/testing/python-testing/contact-va
 contact/test-forms | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-test-forms.png)
 contact/test-model | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-test-models.png)
 contact/test-views | Pass | [Image](docs/screenshot/testing/python-testing/contact-validation-test-views.png)
+**Checkout APP**
+checkout/admin | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-admin.png)
+checkout/app | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-apps.png)
+checkout/forms | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-forms.png)
+checkout/models | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-models.png)
+checkout/signals | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-signals.png)
+checkout/url | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-urls.png)
+checkout/views | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-views.png)
+checkout/webhook_handler | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-webhook_handler.png)
+checkout/webhook | Pass | [Image](docs/screenshot/testing/python-testing/checkout-validation-webhooks.png)
