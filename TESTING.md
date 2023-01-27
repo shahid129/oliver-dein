@@ -19,6 +19,39 @@ Throughout the entire development, testing was ongoing. Throughout the developme
 
 ## Automated Testing
 
+The Django testing framework was used to perform automated testing of most of the apps' original Python code. The following tests have been carried out:
+
+Coverage was also used to see what I was missing from the test. Due to time constraints, I was unable to complete the full automated testing. But it could be a future feature for a project. Now I have a better understanding of automated testing, and I know why we need it compared to manual testing.
+A coverage report of the tests for the whole project can be viewed [here](docs/screenshot/testing/automated-test/coverage-report.pdf)
+
+**Profiles App**
+![Image](docs/screenshot/testing/automated-test/profile-app.png)
+
+**Result:** All test pass
+
+**Products App**
+
+![Image](docs/screenshot/testing/automated-test/product-app.png)
+
+**Result:** All test pass
+
+**Home App**
+
+![Image](docs/screenshot/testing/automated-test/home-app.png)
+
+**Result:** All test pass
+
+**Faqs App**
+
+![Image](docs/screenshot/testing/automated-test/faqs-app.png)
+
+**Result:** All test pass
+
+**Contact App**
+
+![Image](docs/screenshot/testing/automated-test/contact-app.png)
+
+**Result:** All test pass
 
 ## Manual Testing
 ### User Story
@@ -622,17 +655,18 @@ bag/views | Pass | [Image](docs/screenshot/testing/python-testing/bag-validation
 
 
 ### LIGHTHOUSE
+Google lighthouse testing was carried out in incognito mode in google chrome
 
 Page | Result |
 --- | --- |
 Home Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-home.png" width="200">
- Bag Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-bag.png" width="200">
- Checkout Success Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-checkout-success.png" width="200">
- Checkout Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-checkout.png" width="200">
- Contact Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-contact.png" width="200">
- Password Reset Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-password-reset.png" width="200">
- Privacy Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-privacy.png" width="200">
- Product Detail Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-product-detail.png" width="200">
- Product Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-products.png" width="200">
- Sign In Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-sign-in.png" width="200">
- Sign Up Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-sign-up.png" width="200">
+Bag Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-bag.png" width="200">
+Checkout Success Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-checkout-success.png" width="200">
+Checkout Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-checkout.png" width="200">
+Contact Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-contact.png" width="200">
+Password Reset Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-password-reset.png" width="200">
+Privacy Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-privacy.png" width="200">
+Product Detail Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-product-detail.png" width="200">
+Product Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-products.png" width="200">
+Sign In Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-sign-in.png" width="200">
+Sign Up Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-sign-up.png" width="200">
