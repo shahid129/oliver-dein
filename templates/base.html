@@ -15,9 +15,9 @@
         including furnitures, kids toys storage cots, beds and mattress, kitchen appliances taps and sinks top quality furniture">
     {% endblock %}
     <!-- Favicon -->
-    <!-- {% block favicon %}
+    {% block favicon %}
     <link rel="icon" type="image/png" href="{% static 'favicon/favicon.ico' %}">
-    {% endblock %} -->
+    {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
@@ -85,7 +85,7 @@
         </nav>
         <div>
             <div id="delivery-banner" class="row text-center">
-                <h4 class="m-0"><strong>Free Delivery</strong> on orders over ${{ free_delivery_threshold }}</h4>
+                <h4 class="m-0"><strong>Free Delivery</strong> on orders over €{{ free_delivery_threshold }}</h4>
             </div>
         </div>
     </header>

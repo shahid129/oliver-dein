@@ -3,13 +3,13 @@
 
 {% block content %}
 <div class="container">
-    {% for privacy in privacy %}
+    {% for pvc in privacy %}
     <div class="row my-5">
-        <h2 class="text-center">{{ privacy.title }}</h2>
+        <h2 class="text-center">{{ pvc.title }}</h2>
     </div>
     <div class="row justify-content-center">
         <div class="col-8">
-            <p class="privacy-text">{{ privacy.privacy_policy }}</p>
+            <p class="privacy-text">{{ pvc.privacy_policy }}</p>
         </div>
     </div>
     {% endfor %}
