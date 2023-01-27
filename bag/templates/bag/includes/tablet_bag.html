@@ -29,10 +29,10 @@
         </div>
         <div class="col-12 col-sm-6">
             {% include 'bag/quantity_input.html' %}
-            <a class="update-link btn mb-3"><small>Update</small></a>
-            <a type="button" class="remove-item btn btn-outline-danger mb-3" data-toggle="modal" data-target="#{{ item.slug }}">
+            <button class="update-link btn mb-3"><small>Update</small></button>
+            <button type="button" class="remove-item btn btn-outline-danger mb-3" data-toggle="modal" data-target="#{{ item.slug }}">
                 <small>Delete</small>
-            </a>
+            </button>
             <!-- Modal to confirmation to remove from basket -->
             {% include 'bag/includes/remove_from_bag.html' %}
         </div>

@@ -43,11 +43,11 @@
                                 </td>
                                 <td class="py-3">
                                     {% include 'bag/quantity_input.html' %}
-                                    <a class="update-link btn mt-2"><small>Update</small></a>
+                                    <button class="update-link btn mt-2"><small>Update</small></button>
                                     <!-- <a class="remove-item btn btn-outline-danger mt-2" id="remove_{{ item.slug }}" data-product-size="{{ item.size }}"><small>Delete</small></a> -->
-                                    <a type="button" class="remove-item btn btn-outline-danger mt-2" data-toggle="modal" data-target="#{{ item.slug }}_laptop">
+                                    <button type="button" class="remove-item btn btn-outline-danger mt-2" data-toggle="modal" data-target="#{{ item.slug }}_laptop">
                                         <small>Delete</small>
-                                    </a>
+                                    </button>
                                     <!-- Modal to confirmation to remove from basket -->
                                     {% include 'bag/includes/remove_from_bag_laptop.html' %}
 
