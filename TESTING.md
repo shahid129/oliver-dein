@@ -619,3 +619,20 @@ checkout/webhook | Pass | [Image](docs/screenshot/testing/python-testing/checkou
 bag/contexts | Pass | [Image](docs/screenshot/testing/python-testing/bag-validation-contexts.png)
 bag/urls | Pass | [Image](docs/screenshot/testing/python-testing/bag-validation-urls.png)
 bag/views | Pass | [Image](docs/screenshot/testing/python-testing/bag-validation-views.png)
+
+
+### LIGHTHOUSE
+
+Page | Result |
+--- | --- |
+Home Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-home.png" width="200">
+ Bag Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-bag.png" width="200">
+ Checkout Success Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-checkout-success.png" width="200">
+ Checkout Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-checkout.png" width="200">
+ Contact Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-contact.png" width="200">
+ Password Reset Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-password-reset.png" width="200">
+ Privacy Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-privacy.png" width="200">
+ Product Detail Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-product-detail.png" width="200">
+ Product Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-products.png" width="200">
+ Sign In Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-sign-in.png" width="200">
+ Sign Up Page | <img src="docs/screenshot/testing/lighthouse-testing/lighthouse-sign-up.png" width="200">
