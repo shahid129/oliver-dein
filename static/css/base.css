@@ -67,6 +67,12 @@ li.nav-item {
     background-color: white;
 }
 
+/*  home icon for mobile */
+.home-icon {
+    display: none;
+    color: black;
+}
+
 /* --------------- footer */
 footer{
     margin-top: auto;
@@ -89,7 +95,6 @@ footer{
 .remove-footer-gutter {
     --bs-gutter-x: 0px;
 }
-
 
 .footer-menu a,
 .nav-item a,
@@ -116,7 +121,6 @@ footer{
 #mc_embed_signup .helper_text {
     padding: 0 !important;
 }
-
 
 #mc_embed_signup input {
     border: 0.6px solid #ABB0B2 !important;
@@ -150,29 +154,6 @@ footer{
 #delivery-banner {
     background-color: #F99F38;
 }
-
-/* .search-bar {
-    width: 0%;
-    display: none;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-
-.d-lg-flex {
-    width: 100%;
-}
-
-.d-lg-flex {
-    display: flex!important;
-    justify-content: flex-end;
-}
-
-.dropdown-menu.show {
-    left: 0;
-} */
-
 
 /* button */
 
@@ -333,7 +314,7 @@ footer{
 }
 
 /* Allauth form formatting */
-/* add margint to fields */
+/* add margin to fields */
 .allauth-form-inner-content input {
     margin: 12px 0;
 }
@@ -349,7 +330,6 @@ footer{
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -435,7 +415,6 @@ footer{
     width: 200px;
 }
 
-
 .map {
     width: 100%;
     height: 250px;
@@ -468,7 +447,6 @@ footer{
     }
 }
 
-
 @media (min-width: 768px) {
 
     .table-now {
@@ -479,11 +457,6 @@ footer{
     .free-delivery-alert {
         text-align: right;
     }
-}
-
-.home-icon {
-    display: none;
-    color: black;
 }
 
 @media (max-width: 576px) {
