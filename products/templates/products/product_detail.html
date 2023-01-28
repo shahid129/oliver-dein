@@ -22,15 +22,12 @@
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
                 {% if product.discount_price %}
-                    
                     <del class=""><span class="mt-3">€{{ product.price }}</span> </del>
                     <span class="badge bg-primary">Sale</span>
                    
                     <p class="mt-3">€{{ product.discount_price }} </p>
-
                 {% else %}
                     <p class="mt-3">€{{ product.price }}</p>
-                    
                 {% endif %}
                 <p class="mt-3">
                     {% if product.category %}
@@ -53,7 +50,6 @@
                     {% include 'products/includes/delete_modal.html' %}
                 </small>
                 {% endif %}
-                
                 <p class="mt-3">{{ product.description }}</p>
             </div>
             <form class="form" action="{% url 'add_to_bag' product.slug %}" method="POST">
@@ -72,7 +68,6 @@
                             </select>
                         </div>
                     {% endif %}
-
                     {% endwith %}
                     
                     <div class="col-12">
@@ -109,7 +104,6 @@
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
             </form> 
-            
         </div>
     </div>
     <div class="container mb-3">
