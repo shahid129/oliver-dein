@@ -6,7 +6,7 @@ from django.conf import settings
 
 from django.template.loader import render_to_string
 
-from .models import Contact, Address
+from .models import Address
 from .forms import ContactForm
 
 

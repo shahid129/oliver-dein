@@ -1,8 +1,7 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-from django.shortcuts import redirect
 from django.urls import reverse
-from .models import Product, Category
+from .models import Product
 
 
 class ProductDetailTestViews(TestCase):

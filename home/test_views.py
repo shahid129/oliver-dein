@@ -1,7 +1,4 @@
 from django.test import TestCase
-from django.contrib.auth.models import User
-from django.shortcuts import redirect
-from products.models import Product
 
 
 class TestViews(TestCase):

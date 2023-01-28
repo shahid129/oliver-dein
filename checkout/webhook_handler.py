@@ -149,7 +149,7 @@ class StripeWH_Handler:
                                 product_size=size,
                             )
                             order_line_item.save()
-            except exeption as e:
+            except Exception as e:
                 if order:
                     order.delete()
                 return HttpResponse(
