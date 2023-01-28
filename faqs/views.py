@@ -7,7 +7,7 @@ from .forms import FaqsForm
 
 def faqs(request):
     """
-    Dispaly faqs in the faqs page
+    Display faqs in the faqs page
     """
     faqs = Faqs.objects.all()
 

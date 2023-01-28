@@ -57,7 +57,6 @@ class TestViews(TestCase):
         self.client.login(username='admin', password='adminpassword')
         response = self.client.get(f'/faqs/delete_faqs/{self.faq.id}/')
         self.assertEqual(response.status_code, 302)
-        # self.assertRedirects(response, '/faqs/')
 
     # ----------------- End of url test
 
@@ -109,7 +108,7 @@ class TestViews(TestCase):
         )
         self.assertEqual(response.status_code, 302)
 
-    # Superuser functionalites
+    # Superuser functionality
     def test_only_superuser_can_add(self):
         """
         Test if the edit view lets you edit the faqs
