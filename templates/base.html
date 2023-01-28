@@ -11,7 +11,8 @@
     <meta name="keywords" content="Oliver dein, online shopping, free delivery, furniture, nursery, kids kitchen, dining table, 
         couch, chair, furniture, nursery, toy storage, children wardrobe, cots mattress, headboards, beds,
         kitchen, cabinet, appliances, taps and sinks">
-    <meta name="description" content="Oliver Dein online shopping, free deliveries, all kinds of households
+    <meta name="description"
+        content="Oliver Dein online shopping, free deliveries, all kinds of households
         including furnitures, kids toys storage cots, beds and mattress, kitchen appliances taps and sinks top quality furniture">
     {% endblock %}
     <!-- Favicon -->
@@ -38,12 +39,12 @@
     {% endblock %}
 
     {% block corejs %}
-    <script src="https://code.jquery.com/jquery-3.6.2.min.js" 
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
         integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
     </script>
@@ -66,18 +67,18 @@
             <ul class="container-fluid navigation-fluid-bar">
                 <li class="list-unstyled">
                     <a class="navbar-brand d-none d-sm-flex" href="{% url 'home' %}">
-                        <img class="brand-logo"  src="{% static 'oliver-dein-logo.png' %}" alt="Oliver dein logo">
+                        <img class="brand-logo" src="{% static 'oliver-dein-logo.png' %}" alt="Oliver dein logo">
                     </a>
                 </li>
                 {% include 'includes/mobile-header-top.html' %}
 
                 <li class="list-unstyled">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                </li>                
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
             </ul>
             {% include 'includes/main-nav.html' %}
         </nav>
@@ -87,22 +88,22 @@
             </div>
         </div>
     </header>
-    
+
 
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
     {% endif %}
@@ -120,10 +121,9 @@
     <script>
         $('.toast').toast('show');
         // Remove toast after 1.5 seconds
-        setTimeout(function() {
+        setTimeout(function () {
             $('.message-container').fadeOut('slow');
-        }, 1500); 
-
+        }, 1500);
     </script>
     {% endblock %}
 

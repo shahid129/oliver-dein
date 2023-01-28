@@ -1,69 +1,71 @@
 <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-3 mb-lg-0">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Furniture
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Dining%20Tables">Dining Tables</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Couch">Couch</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Chair">Chair</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Dining%20Tables,Couch,Chair">All Furniture</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Dining%20Tables,Couch,Chair">All
+                        Furniture</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Nursery
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Toy%20Storage">Toy Storage</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Children%20Wardrobe">Children Wardrobe</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Children%20Wardrobe">Children
+                        Wardrobe</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Cots">Cots</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Toy%20Storage,Children%20Wardrobe,Cots">All Nursery</a></li>
+                <li><a class="dropdown-item"
+                        href="{% url 'products' %}?category=Toy%20Storage,Children%20Wardrobe,Cots">All Nursery</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Beds
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Beds">Beds</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Mattresses">Mattresses</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Headboards">Headboards</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Beds,Mattresses,Headboards">All Bed & Mattresses</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Beds,Mattresses,Headboards">All Bed &
+                        Mattresses</a></li>
 
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Kitchens
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Cabinets"> Cabinets</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Appliances">Appliances</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Taps%20and%20Sinks">Taps and Sinks</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Cabinets,Appliances,Taps%20and%20Sinks,">All Kitchen Products</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Taps%20and%20Sinks">Taps and Sinks</a>
+                </li>
+                <li><a class="dropdown-item"
+                        href="{% url 'products' %}?category=Cabinets,Appliances,Taps%20and%20Sinks,">All Kitchen
+                        Products</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Account
             </a>
             <ul class="dropdown-menu">
                 {% if user.is_authenticated %}
-                    {% if user.is_superuser %}
-                        <li><a class="dropdown-item" href="{% url 'add_product' %}">Stock Management</a></li>
-                    {% endif%}
-                        <li><a class="dropdown-item" href="{% url 'profile' %}">My Profile</a></li>
-                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
+                {% if user.is_superuser %}
+                <li><a class="dropdown-item" href="{% url 'add_product' %}">Stock Management</a></li>
+                {% endif%}
+                <li><a class="dropdown-item" href="{% url 'profile' %}">My Profile</a></li>
+                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
                 {% else %}
-                        <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Sign In</a></li>
+                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                <li><a class="dropdown-item" href="{% url 'account_login' %}">Sign In</a></li>
                 {% endif %}
             </ul>
         </li>
@@ -71,7 +73,8 @@
             <a class="{% if grand_total %}text-info font-weighht-bold {% else %}text-black {% endif %} nav-link"
                 href="{% url 'bag' %}">
                 <div class="shopping-cart">
-                    <i class="fas fa-shopping-cart"><span class="shopping-cart-total">{% if grand_total %}€{{ grand_total | floatformat:2 }}{% else %}€0.00{% endif %}</span>
+                    <i class="fas fa-shopping-cart"><span
+                            class="shopping-cart-total">{% if grand_total %}€{{ grand_total | floatformat:2 }}{% else %}€0.00{% endif %}</span>
                     </i>
                 </div>
             </a>
@@ -92,15 +95,21 @@
     // hover effect on search icon
     $('.search-button').hover(function () {
         $(".navbar-nav").hide(1000);
-        $(".search-bar").show().animate({ width: "100%" }, 'slow')
-        $(".navigation-fluid-bar").css({width: "30%"})
+        $(".search-bar").show().animate({
+            width: "100%"
+        }, 'slow')
+        $(".navigation-fluid-bar").css({
+            width: "30%"
+        })
     })
 
     // this block of code is taken from 
     // https://stackoverflow.com/questions/1403615/use-jquery-to-hide-a-div-when-the-user-clicks-outside-of-it
     $(document).on('click', function (e) {
         if ($(e.target).closest(".search-bar").length === 0) {
-            $(".search-bar").hide().css({'width': '0'},);
+            $(".search-bar").hide().css({
+                'width': '0'
+            }, );
             $(".navbar-nav").fadeIn(2000)
         }
     });
