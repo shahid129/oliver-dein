@@ -13,7 +13,7 @@ import time
 
 
 class StripeWH_Handler:
-    """ Handles stripe webshooks"""
+    """ Handles stripe webhooks"""
 
     def __init__(self, request):
         self.request = request
