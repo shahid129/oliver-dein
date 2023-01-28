@@ -44,7 +44,6 @@
                                 <td class="py-3">
                                     {% include 'bag/quantity_input.html' %}
                                     <button class="update-link btn mt-2"><small>Update</small></button>
-                                    <!-- <a class="remove-item btn btn-outline-danger mt-2" id="remove_{{ item.slug }}" data-product-size="{{ item.size }}"><small>Delete</small></a> -->
                                     <button type="button" class="remove-item btn btn-outline-danger mt-2" data-toggle="modal" data-target="#{{ item.slug }}_laptop">
                                         <small>Delete</small>
                                     </button>
@@ -132,8 +131,8 @@
         form.submit();
     })
 
- // Remove item from bag
- $('.remove-item').click(function(e) {
+    // Remove item from bag
+    $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('size');
