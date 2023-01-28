@@ -89,17 +89,19 @@
 </div>
 
 <script>
-$('.search-button').hover(function () {
-    $(".navbar-nav").hide(1000);
-    $(".search-bar").show().animate({ width: "100%" }, 'slow')
-})
+    // hover effect on search icon
+    $('.search-button').hover(function () {
+        $(".navbar-nav").hide(1000);
+        $(".search-bar").show().animate({ width: "100%" }, 'slow')
+        $(".navigation-fluid-bar").css({width: "30%"})
+    })
 
-// this block of code is taken from 
-// https://stackoverflow.com/questions/1403615/use-jquery-to-hide-a-div-when-the-user-clicks-outside-of-it
-$(document).on('click', function (e) {
-    if ($(e.target).closest(".search-bar").length === 0) {
-        $(".search-bar").hide().css({'width': '0'},);
-        $(".navbar-nav").fadeIn(2000)
-    }
-});
+    // this block of code is taken from 
+    // https://stackoverflow.com/questions/1403615/use-jquery-to-hide-a-div-when-the-user-clicks-outside-of-it
+    $(document).on('click', function (e) {
+        if ($(e.target).closest(".search-bar").length === 0) {
+            $(".search-bar").hide().css({'width': '0'},);
+            $(".navbar-nav").fadeIn(2000)
+        }
+    });
 </script>

@@ -67,6 +67,12 @@ li.nav-item {
     background-color: white;
 }
 
+/* Search bar mobile / small display */
+.search-bar-mobile {
+    width: 100%;
+    left: 0;
+}
+
 /*  home icon for mobile */
 .home-icon {
     display: none;
@@ -167,6 +173,7 @@ footer{
 .btn:hover {
     background-color: #F99F38;
     color: white;
+    border-color: #F99F38;
 }
 
 .bg-primary {
