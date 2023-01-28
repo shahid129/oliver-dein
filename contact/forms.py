@@ -35,4 +35,4 @@ class ContactForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = False
             # add class to fields
-            self.fields[field].widget.attrs['class'] = 'm-2'
+            self.fields[field].widget.attrs['class'] = 'my-2'
