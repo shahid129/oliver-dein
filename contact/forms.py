@@ -3,7 +3,13 @@ from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
+    """
+    Create a form for the contact model
+    """
     class Meta:
+        """
+        Display the required fields
+        """
         model = Contact
         fields = "__all__"
 
