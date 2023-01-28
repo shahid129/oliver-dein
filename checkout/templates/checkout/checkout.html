@@ -53,15 +53,15 @@
             {% endfor %}
             <hr class="my-0">
             <div class="row text-right">
-                <div class="col-7 offset-2">
+                <div class="col-7 offset-1">
                     <p class="my-0">Order Total:</p>
                     <p class="my-0">Delivery:</p>
-                    <p class="my-0">Grand Total:</p>
+                    <h5 class="my-0"><strong>Total:</strong></h5>
                 </div>
                 <div class="col-3">
                     <p class="my-0">€{{ total | floatformat:2 }}</p>
                     <p class="my-0">€{{ delivery_charge | floatformat:2 }}</p>
-                    <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
+                    <h5 class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></h5>
                 </div>
             </div>
         </div>
