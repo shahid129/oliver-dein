@@ -1,7 +1,7 @@
 # Oliver Dein
 ![Main Page](docs/screenshot/others/site-main-page.png)
 
-Oliver Dein is an internet store where customers may purchase any kind of household goods. The website utilises Stripe as the payment processor.
+Oliver Dein is an online store where customers may purchase any kind of household goods. The website utilizes Stripe as the payment processor.
 This example project was not created to simulate actual credit card transactions. Use the test card number 4242 4242 4242 4242 with any future expiration date, any three-digit CVC, and any five-digit zip code to test the functionality.
 
 [View Live Project Here](https://oliver-dein.herokuapp.com/)
@@ -53,28 +53,34 @@ This example project was not created to simulate actual credit card transactions
     - [Others](#others)
 - [Acknowledgement](#acknowledgement)
 
+# Business Strategy
+
 ## Site Goals
 - Site owners aim
     - Site owners can easily sell their products.
     - Site owners add or update their products.
-    - Site owners can promote their products in sale or fetured products category.
+    - Site owners can promote their products in sale or featured products category.
 -  Site Users Goals:
     - Can easily find the products.
     - Get a decent user experience.
-    - Can purchase proudcts easily.
+    - Can purchase products easily.
 
 
 ## Web Marketing
 The use of social media marketing is probably essential for drawing customers and increasing visibility. The best way to generate interest is probably through an organic approach as the marketing budget will probably be little at first.
 
 Marketing on social media platforms other than Facebook, such as Instagram, Pinterest, and YouTube, is advantageous. Because Facebook marketing is more important than any other platform, I will use it for the purposes of this project. 
-The live face book page can be found [here](https://www.facebook.com/profile.php?id=100089334735487). If the site is no longer available an image can be found [here](docs/screenshot/FB_page_1.png) and [here](docs/screenshot/FB_page_2.png).
+The live face book page can be found [here](https://www.facebook.com/profile.php?id=100089334735487). If the site is no longer available an image can be found [here](docs/screenshot/others/FB_page_1.png) and [here](docs/screenshot/others/FB_page_2.png).
 
 
-## Search Engine Optimaisation
+## Search Engine Optimization
 The meta keywords and description in the site's base.html have been updated to reflect the researches keywords. On significant pages like the index and product pages, the site title has the name Oliver Dein and also contains key keywords.
 
-The homepage has also been designed with SEO in mind. Some of the keywords are also used in the text portions of the webpage, with strong tags surrounding the significant ones. For SEO purposes, a sitemap.xml and robots.txt file have also been added.
+The homepage has also been designed with SEO in mind. Some of the keywords are also used in the text portions of the webpage, with strong tags surrounding the significant ones. 
+
+For SEO purposes, I've also included an  a sitemap.xml and robots.txt file to the website's root directory to aid in the search engines' ability to crawl the page. 
+
+A sitemap is a method of classifying a website, indicating the URLs and the information contained within each section whereas The URLs on your website that a search engine crawler may visit are specified in a robots.txt file.
 
 ![](docs/screenshot/others/SEO-keywords.png)
 
@@ -85,6 +91,8 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
 
 The epics were created using the milestones on github. Each epic was created and related issues were added to it. A time frame was added to make sure the tasks were done on time.
+
+Details of user story and their testing can be found in the [Testing Section](TESTING.md)
 
 - ### As a site user
     - I can rapidly understand what the website is offering so that I can determine whether it satisfies my needs.
@@ -114,7 +122,7 @@ The epics were created using the milestones on github. Each epic was created and
     - I can easily search for products so that i know which product I am looking at.
     - I can also see number of products in any particular search.
     - I can easily checkout without need to register.
-    - I can get a notification if my purchase was successfull.
+    - I can get a notification if my purchase was successful.
     - I can receive a confirmation email after purchasing
     I can view an order confirmation after checkout so that I can ensure that the purchase is as expected.
     - I can create an account and store my purchase history and my details for future purchase.
