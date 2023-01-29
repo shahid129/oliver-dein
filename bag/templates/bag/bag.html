@@ -14,105 +14,111 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-                <div class="table-responsive-sm table-now">
-                    {% include 'bag/includes/tablet_bag.html' %}
-                    <table class="table table-sm table-borderless w-auto d-none d-lg-block">
-                        <thead class="text-center">
-                            <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col"></th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Subtotal</th>
-                            </tr>
-                        </thead>
-
-                        {% for item in bag_items %}
-                            <tr>
-                                <td class="p-3 w-25">
-                                    {% if item.product.image %}
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{ {item.product.name }}">
-                                    {% else %}
-                                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                                    {% endif %}
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                    <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                                    <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                                </td>
-                                <td class="py-3">
-                                    {% include 'bag/quantity_input.html' %}
-                                    <button class="update-link btn mt-2"><small>Update</small></button>
-                                    <button type="button" class="remove-item btn btn-outline-danger mt-2" data-toggle="modal" data-target="#{{ item.slug }}_laptop">
-                                        <small>Delete</small>
-                                    </button>
-                                    <!-- Modal to confirmation to remove from basket -->
-                                    {% include 'bag/includes/remove_from_bag_laptop.html' %}
-
-                                </td>
-                                <td class="py-3 w-25">
-                                    {% if item.product.discount_price %}
-                                        <del class="text-danger">
-                                            <p class="text-center">€{{ item.product.price }}</p>
-                                        </del>
-                                    <p class="text-center">€{{ item.product.discount_price }}</p>
-
-                                    {% else %}
-                                        <p class="text-center">€{{ item.product.price }}</p>
-                                        
-                                    {% endif %}
-                                </td>
-                                <td class="py-3 text-center">
-                                    {% if item.product.discount_price %}
-                                        <p class="my-0">€{{ item.product.discount_price | calc_subtotal:item.quantity }}</p>
-                                    {% else%}
-                                        <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                    {% endif %}
-                                </td>
-                            </tr>
-                        {% endfor %}
-                    </table>
-                    <table class="float-end">
+            <div class="table-responsive-sm table-now">
+                {% include 'bag/includes/tablet_bag.html' %}
+                <table class="table table-sm table-borderless w-auto d-none d-lg-block">
+                    <thead class="text-center">
                         <tr>
-                            <td colspan="5" class="pt-5 text-right">
-                                <h6><strong>Total: €{{ total|floatformat:2 }}</strong></h6>
-                                <h6>Delivery: €{{ delivery_charge|floatformat:2 }}</h6>
-                                <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
-                                {% if free_delivery_delta > 0 %}
-                                    <p class="mb-1 text-danger">
-                                        You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
-                                    </p>
-                                {% endif %}
-                            </td>
+                            <th scope="col">Product</th>
+                            <th scope="col"></th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Subtotal</th>
                         </tr>
-                        <tr>
-                            <td colspan="5">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black m-1 float-end">
-                                    <span class="icon">
-                                        <i class="fas fa-arrow-alt-circle-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                                <a href="{% url 'checkout' %}" class="btn btn-black m-1 mb-5 float-end">
-                                    <span class="text-uppercase">Checkout</span>
-                                    <span class="icon">
-                                        <i class="fas fa-lock"></i>
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                    </thead>
+
+                    {% for item in bag_items %}
+                    <tr>
+                        <td class="p-3 w-25">
+                            {% if item.product.image %}
+                            <img class="img-fluid rounded" src="{{ item.product.image.url }}"
+                                alt="{ {item.product.name }}">
+                            {% else %}
+                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ item.product.name }}">
+                            {% endif %}
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0"><strong>Size:
+                                </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
+                            </p>
+                            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                        </td>
+                        <td class="py-3">
+                            {% include 'bag/quantity_input.html' %}
+                            <button class="update-link btn mt-2"><small>Update</small></button>
+                            <button type="button" class="remove-item btn btn-outline-danger mt-2" data-toggle="modal"
+                                data-target="#{{ item.slug }}_laptop">
+                                <small>Delete</small>
+                            </button>
+                            <!-- Modal to confirmation to remove from basket -->
+                            {% include 'bag/includes/remove_from_bag_laptop.html' %}
+
+                        </td>
+                        <td class="py-3 w-25">
+                            {% if item.product.discount_price %}
+                            <del class="text-danger">
+                                <p class="text-center">€{{ item.product.price }}</p>
+                            </del>
+                            <p class="text-center">€{{ item.product.discount_price }}</p>
+
+                            {% else %}
+                            <p class="text-center">€{{ item.product.price }}</p>
+
+                            {% endif %}
+                        </td>
+                        <td class="py-3 text-center">
+                            {% if item.product.discount_price %}
+                            <p class="my-0">€{{ item.product.discount_price | calc_subtotal:item.quantity }}</p>
+                            {% else%}
+                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <table class="float-end">
+                    <tr>
+                        <td colspan="5" class="pt-5 text-right">
+                            <h6><strong>Total: €{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: €{{ delivery_charge|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_delivery_delta > 0 %}
+                            <p class="mb-1 text-danger">
+                                You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>
+                                more!
+                            </p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black m-1 float-end">
+                                <span class="icon">
+                                    <i class="fas fa-arrow-alt-circle-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="{% url 'checkout' %}" class="btn btn-black m-1 mb-5 float-end">
+                                <span class="text-uppercase">Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
             {% else %}
-                <div class="text-center">
-                    <p class="my-5">Bag is empty</p>
-                    <p>
-                        <a class="text-decoration-none category-badge" href="{% url 'products' %}">
-                            Back to Products <i class="fas fa-arrow-alt-circle-left"></i>
-                        </a> 
-                    </p>
-                </div>
+            <div class="text-center">
+                <p class="my-5">Bag is empty</p>
+                <p>
+                    <a class="text-decoration-none category-badge" href="{% url 'products' %}">
+                        Back to Products <i class="fas fa-arrow-alt-circle-left"></i>
+                    </a>
+                </p>
+            </div>
             {% endif %}
         </div>
     </div>
@@ -126,23 +132,26 @@
 
 <script>
     // update item
-    $('.update-link').click(function(e) {
+    $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
     })
 
     // Remove item from bag
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('size');
         var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+            'product_size': size
+        };
 
         $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
+            .done(function () {
+                location.reload();
+            });
     })
 </script>
 {% endblock %}

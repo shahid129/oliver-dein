@@ -1,40 +1,42 @@
 {% for item in bag_items %}
-    <!-- bag items. Displayed on small screens only. -->
-    <div class="row d-lg-none">
-        <div class="col-12 col-sm-6">
-            {% if item.product.image %}
-                <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-            {% else %}
-                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-            {% endif %}
-            
-        </div>
-        <div class="col-12 col-sm-6 my-auto">
-            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-            <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-            <p>
-                {% if item.product.discount_price %}
-                    <del class="text-danger">
-                        €{{ item.product.price }}
-                    </del>
-                €{{ item.product.discount_price }}
+<!-- bag items. Displayed on small screens only. -->
+<div class="row d-lg-none">
+    <div class="col-12 col-sm-6">
+        {% if item.product.image %}
+        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+        {% else %}
+        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+        {% endif %}
 
-                {% else %}
-                    €{{ item.product.price }}
-                    
-                {% endif %}
-            </p>
-            
-        </div>
-        <div class="col-12 col-sm-6">
-            {% include 'bag/quantity_input.html' %}
-            <button class="update-link btn mb-3"><small>Update</small></button>
-            <button type="button" class="remove-item btn btn-outline-danger mb-3" data-toggle="modal" data-target="#{{ item.slug }}">
-                <small>Delete</small>
-            </button>
-            <!-- Modal to confirmation to remove from basket -->
-            {% include 'bag/includes/remove_from_bag.html' %}
-        </div>
     </div>
+    <div class="col-12 col-sm-6 my-auto">
+        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+        <p class="my-0"><strong>Size:
+            </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+        <p>
+            {% if item.product.discount_price %}
+            <del class="text-danger">
+                €{{ item.product.price }}
+            </del>
+            €{{ item.product.discount_price }}
+
+            {% else %}
+            €{{ item.product.price }}
+
+            {% endif %}
+        </p>
+
+    </div>
+    <div class="col-12 col-sm-6">
+        {% include 'bag/quantity_input.html' %}
+        <button class="update-link btn mb-3"><small>Update</small></button>
+        <button type="button" class="remove-item btn btn-outline-danger mb-3" data-toggle="modal"
+            data-target="#{{ item.slug }}">
+            <small>Delete</small>
+        </button>
+        <!-- Modal to confirmation to remove from basket -->
+        {% include 'bag/includes/remove_from_bag.html' %}
+    </div>
+</div>
 {% endfor %}
