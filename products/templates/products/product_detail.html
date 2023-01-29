@@ -45,8 +45,9 @@
                 </p>
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="{% url 'edit_product' product.slug %}">Edit</a> | 
-                    <a class="text-danger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#id_{{ product.slug }}" href="{% url 'delete_product' product.slug %}">Delete</a>
+                    <a href="{% url 'edit_product' product.slug %}">Edit</a> |
+                    <a class="text-danger" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#id_{{ product.slug }}" href="{% url 'delete_product' product.slug %}">Delete</a>
                     {% include 'products/includes/delete_modal.html' %}
                 </small>
                 {% endif %}
@@ -77,19 +78,24 @@
                         <div class="form-group quantity-form">
                             <div class="input-group input-group-{{ item.slug }}">
                                 <div class="input-group-prepend me-1">
-                                    <button class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.slug }}"
-                                        data-item_id="{{ item.slug }}" id="decrement-qty_{{ item.slug }}" aria-label="increment-quantity">
+                                    <button
+                                        class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.slug }}"
+                                        data-item_id="{{ item.slug }}" id="decrement-qty_{{ item.slug }}"
+                                        aria-label="increment-quantity">
                                         <span>
                                             <i class="fas fa-minus fa-sm"></i>
                                         </span>
                                     </button>
                                 </div>
-                                <input class="form-control form-control-sm qty_input w-50 id_qty_{{ item.slug }}" type="number" 
-                                    name="quantity" value="1" min="1" max="100" 
-                                    data-item_id="{{ item.slug }}" id="id_qty_{{ item.slug}}" aria-label="quantity-input-form">
+                                <input class="form-control form-control-sm qty_input w-50 id_qty_{{ item.slug }}"
+                                    type="number" name="quantity" value="1" min="1" max="100"
+                                    data-item_id="{{ item.slug }}" id="id_qty_{{ item.slug}}"
+                                    aria-label="quantity-input-form">
                                 <div class="input-group-append ms-1">
-                                    <button class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ product.slug }}"
-                                        data-item_id="{{ item.slug }}" id="increment-qty_{{ item.slug }}" aria-label="decrement-quantity">
+                                    <button
+                                        class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ product.slug }}"
+                                        data-item_id="{{ item.slug }}" id="increment-qty_{{ item.slug }}"
+                                        aria-label="decrement-quantity">
                                         <span>
                                             <i class="fas fa-plus fa-sm"></i>
                                         </span>
